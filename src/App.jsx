@@ -1,35 +1,62 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useLayoutEffect, Suspense } from "react";
+import { useLocation, useRoutes } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
+import Transitions from "./components/Transition";
+
+const Home = React.lazy(() => import("./pages/Home"));
+const Tugas = React.lazy(() => import("./pages/Tugas"));
+const Jadwal = React.lazy(() => import("./pages/Jadwal"));
+const Pembelajaran = React.lazy(() => import("./pages/Pembelajaran"));
 
 function App() {
-  const [count, setCount] = useState(0)
+  const location = useLocation();
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
+  const element = useRoutes([
+    {
+      path: "/",
+      element: <Home />,
+    },
+    {
+      path: "/tugas",
+      element: <Tugas />,
+    },
+    {
+      path: "/jadwal",
+      element: <Jadwal />,
+    },
+    {
+      path: "/pembelajaran",
+      element: <Pembelajaran />,
+    },
+    // {
+    //   path: "/karya-kami",
+    //   element: <KaryaKami />,
+    // },
+    // {
+    //   path: "/contact",
+    //   element: <Contact />,
+    // },
+  ]);
+
+  if (!element) return null;
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <Suspense
+      fallback={
+        <AnimatePresence mode="wait">
+          <Transitions />
+        </AnimatePresence>
+      }
+    >
+      <AnimatePresence mode="wait" initial={true}>
+        {React.cloneElement(element, { key: location.pathname })}
+      </AnimatePresence>
+    </Suspense>
+  );
 }
 
-export default App
+export default App;
