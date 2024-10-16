@@ -4,8 +4,8 @@ function SvgJavascript() {
   return (
     <svg
       fill="none"
-      height="24"
-      width="24"
+      height="32"
+      width="32"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 124 141.53199999999998"
     >

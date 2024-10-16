@@ -1,0 +1,57 @@
+{
+  "pengenalan-html": {
+    "title": "Pengenalan HTML",
+    "slides": [
+      {
+        "title": "Pengenalan HTML",
+        "content": [""]
+      },
+      {
+        "title": "Pengertian HTML",
+        "content": [
+          "HTML = HyperText Markup Language",
+          "=> Analogi: Tubuh Manusia dan tulang",
+          "=> HTML adalah representasi struktur web"
+        ]
+      },
+      {
+        "title": "Unsur Penyusun Sebuah Web",
+        "content": ["- HTML", "- CSS", "- JavaScript"]
+      },
+      {
+        "title": "Unsur Penyusun sebuah Web (ii)",
+        "content": [
+          "HTML => Sebagai tulang yang merepresentasikan struktur halaman web",
+          "CSS => Sebagai representasi kosmetik, aksesoris a.k.a penampilan dari web",
+          "JavaScript => Sebagai motor penggerak dari HTML dan CSS a.k.a pengatur interaktifitas sebuah web"
+        ]
+      },
+      {
+        "title": "Kenapa harus dari HTML?",
+        "content": [
+          "- HTML adalah dasar dari segala dasar pemrograman web. Fundamental tidak boleh dilewati",
+          "- Gerbang awal sebelum masuk ke dalam CSS dan JavaScript, khususnya DOM",
+          "- React JS pun pada akhirnya akan ada unsur tag HTML di dalamnya."
+        ]
+      }
+    ]
+  },
+  "pengenalan-css": {
+    "title": "Pengenalan CSS",
+    "slides": [
+      {
+        "title": "Pengenalan CSS",
+        "content": ["Sabar duluk"]
+      }
+    ]
+  },
+  "pengenalan-javascrip": {
+    "title": "Pengenalan JavaScript",
+    "slides": [
+      {
+        "title": "Pengenalan JavaScript",
+        "content": ["Sabar duluk"]
+      }
+    ]
+  }
+}

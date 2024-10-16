@@ -4,8 +4,8 @@ function SvgHtml() {
   return (
     <svg
       fill="none"
-      height="24"
-      width="24"
+      height="32"
+      width="32"
       viewBox="0 0 124 141.53199999999998"
     >
       <path

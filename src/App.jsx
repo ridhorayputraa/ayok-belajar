@@ -29,7 +29,7 @@ function App() {
       element: <Jadwal />,
     },
     {
-      path: "/pembelajaran",
+      path: "/pembelajaran/:subject", 
       element: <Pembelajaran />,
     },
     // {
@@ -45,17 +45,17 @@ function App() {
   if (!element) return null;
 
   return (
-    <Suspense
-      fallback={
-        <AnimatePresence mode="wait">
-          <Transitions />
-        </AnimatePresence>
-      }
-    >
+    // <Suspense
+    //   fallback={
+    //     <AnimatePresence mode="wait">
+    //       <Transitions />
+    //     </AnimatePresence>
+    //   }
+    // >
       <AnimatePresence mode="wait" initial={true}>
         {React.cloneElement(element, { key: location.pathname })}
       </AnimatePresence>
-    </Suspense>
+    // </Suspense>
   );
 }
 

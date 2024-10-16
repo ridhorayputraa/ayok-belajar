@@ -5,7 +5,8 @@ import { motion } from "framer-motion";
 
 const Layout = ({ children }) => {
   return (
-    <div className="bg-black">
+    <div>
+      <Navbar />
       <motion.main
         initial={{ opacity: 0 }}
         animate={{
@@ -17,11 +18,9 @@ const Layout = ({ children }) => {
           transition: { duration: 0.3, ease: "easeInOut" },
         }}
       >
-        <Navbar />
         {children}
-
-        <Footer />
       </motion.main>
+      <Footer />
     </div>
   );
 };

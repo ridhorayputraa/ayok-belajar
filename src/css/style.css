@@ -1,12 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
   /* --primary-gd: transparent linear-gradient(140deg, #384967 0%, #6f91cd 100%) 0% 0% no-repeat padding-box; */
   --c-primary: #a831fa;
   --c-secondary: #75e7f8;
-  --c-body: rgb(24 24 27);
+  --c-body: #171717;
   --c-text: rgb(209 213 219);
   --c-black: #212529;
   --c-info: #9597a1;
@@ -19,7 +20,7 @@
   --shadow-bg: 0px 6px 18px rgb(0 0 0 / 8%);
   --shadow-skeleton: 0px 6px 18px rgb(0 0 0 / 3%);
   --ts-cubic: all 0.5s cubic-bezier(0.47, 0.71, 0.66, 0.84);
-
+  --c-black: #000000;
   --btn-background: #09041e;
   --btn-shadow: rgba(33, 4, 104, 0.2);
   --btn-shine-left: rgba(168, 49, 250, 0.5);
@@ -29,11 +30,24 @@
 }
 
 html,
+header,
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(24 24 27);
-  color: rgb(209 213 219);
+  background-color: var(--c-body);
+  color: var(--c-text);
+  font-family: "Poppins", sans-serif;
+}
+
+header{
+  position: sticky;
+  top: 0;
+  z-index: 999999999999999999;
+}
+
+header,
+footer {
+  background-color: var(--c-black);
 }
 
 /*====================================== SECTION COMPONENT WORDING ======================================*/
@@ -235,7 +249,7 @@ body {
   margin: 0 auto;
 }
 
-/*====================================== SECTION HOME Page ======================================*/
+/*====================================== SECTION HOME PAGE ======================================*/
 section {
   margin: 0 auto;
   padding: 4rem 0;
@@ -243,4 +257,10 @@ section {
 
 .learning-content-container {
   min-height: 100vh;
+}
+
+/*====================================== SECTION PEMBELAJARAN PAGE ======================================*/
+section.section-pembelajaran {
+  margin: 0 auto;
+  padding: 0;
 }

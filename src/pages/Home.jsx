@@ -28,14 +28,20 @@ function Home() {
   return (
     <Layout>
       <section className="learning-content-container px-4 flex flex-col items-center gap-16">
-        <h1 className="text-2xl">Konten Pembelajaran</h1>
-        <ul className="learning-content-rapper flex items-center justify-between flex-wrap max-480 gap-6 mx-auto">
-          {learningContent.map((item, index) => (
-            <li key={index}>
-              <LearningContentCard title={item.title} icon={renderIcon(item.icon)} />
-            </li>
-          ))}
-        </ul>
+        <div className="container-fluid mx-auto">
+          <h1 className="text-4xl text-center font-bold">Konten Pembelajaran</h1>
+          <ul className="learning-content-rapper flex items-center flex-wrap max-720 gap-8 mx-auto mt-12">
+            {learningContent.map((item, index) => (
+              <li key={index}>
+                <LearningContentCard
+                  url={item.subject}
+                  title={item.title}
+                  icon={renderIcon(item.icon)}
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
       </section>
     </Layout>
   );
