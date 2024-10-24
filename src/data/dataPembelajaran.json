@@ -1,6 +1,7 @@
 {
   "pengenalan-html": {
     "title": "Pengenalan HTML",
+    "subjectUri": "pengenalan-html",
     "slides": [
       {
         "title": "Pengenalan HTML",
@@ -33,24 +34,261 @@
           "- Gerbang awal sebelum masuk ke dalam CSS dan JavaScript, khususnya DOM",
           "- React JS pun pada akhirnya akan ada unsur tag HTML di dalamnya."
         ]
+      },
+      {
+        "title": "Yuk lihat kode",
+        "content": ["Struktur HTML Sederhana"],
+        "image": "/assets/image/html/img-html-1.png"
+      },
+      {
+        "title": "Yuk lihat kode (ii)",
+        "content": [
+          "Anatomi kode HTML yang dibuat",
+          "- tipe dokumen (si html itu sendiri)",
+          "- judul dokumen (si <title>)",
+          "- konten dokumen (si <body>) yang memiliki 2 elemen:",
+          "* heading dengan tulisan Halo Developer",
+          "- paragraf dengan tulisan Mari ngoprek HTML"
+        ]
+      },
+      {
+        "title": "Yuk lihat kode (iii)",
+        "content": [
+          "Cara membaca sebuah tag html",
+          "",
+          "<a href='https://www.google.com'>Google</a>",
+          "<a> adalah tag pembuka",
+          "href='https://www.google.com' adalah atribut (kiri adalah nama, kanan adalah value)",
+          "Google adalah konten",
+          "</a> adalah tag penutup"
+        ]
+      },
+      {
+        "title": "Tag HTML yang umum digunakan",
+        "content": [
+          "<DOCTYPE html> Tag untuk Deklarasi dokumen",
+          "<html> Tag untuk untuk memulai dokumen",
+          "<head> Tag untuk mengatur bagian atas dokumen",
+          "<body> Tag untuk mengatur bagian konten dokumen",
+          "<h1> - <h6> Tag untuk membuat heading",
+          "<p> Tag untuk membuat paragraf",
+          "<br> Tag untuk membuat baris baru"
+        ]
+      },
+      {
+        "title": "Tag HTML yang umum digunakan (ii)",
+        "content": [
+          "<a> Tag untuk membuat link",
+          "<img> Tag untuk untuk membuat gambar",
+          "<ul> Tag untuk membuat daftar tidak terurut",
+          "<ol> Tag untuk membuat daftar terurut",
+          "<li> Tag untuk membuat daftar item",
+          "<table> Tag untuk membuat table",
+          "<tr> Tag untuk membuat baris table",
+          "<td> Tag untuk membuat kolom table"
+        ]
+      },
+      {
+        "title": "Tag HTML yang umum digunakan (iii)",
+        "content": [
+          "<span> Tag untuk memperbantu styling text",
+          "<div> Tag untuk untuk membuat divider",
+          "<header> Tag untuk membuat bagian atas",
+          "<nav> Tag untuk membuat navigasi",
+          "<footer> Tag untuk membuat bagian bawah",
+          "<table> Tag untuk membuat table",
+          "<section> Tag untuk membuat bagian konten"
+        ]
+      },
+      {
+        "title": "Tools yang digunakan",
+        "content": [
+          "Sebelum kita masuk ke sesi ngoing",
+          "Kenalan tools dulu yah",
+          "Tools apakah yang digunakan dalam pembelajaran ini ???"
+        ]
+      },
+      {
+        "title": "Tools yang digunakan (ii)",
+        "content": [
+          "-Quiziz",
+          "-Git",
+          "-Github",
+          "-Visual Studio Code",
+          "-NodeJS"
+        ]
+      },
+      {
+        "title": "Ayokk Ngoding🎊🎊",
+        "content": [
+          "-Membuka Visual Studio Code (VSCode)",
+          "-Membuat sebuah file baru dengan nama index.html",
+          "-Mengetik kode yang ada di halaman selanjutnya",
+          "-Jalankan dan lihat !"
+        ]
+      },
+      {
+        "title": "Ayokk Ngoding(ii)",
+        "content": [""],
+        "image": "/assets/image/html/img-html-2.png"
+      },
+      {
+        "title": "Ayokk Ngoding(iii)",
+        "content": [""],
+        "image": "/assets/image/html/img-html-3.png"
+      },
+      {
+        "title": "Ayokk Ngoding(iv)",
+        "content": [""],
+        "image": "/assets/image/html/img-html-4.png"
+      },
+      {
+        "title": "Ayokk Ngoding(v)",
+        "content": [
+          "Males ngetik?",
+          "Jadi developer ga boleh males ngetiknya yah!",
+          "Tapi kalau mau dilihat hasil jadinya bisa lihat di sini"
+        ],
+        "url": "https://github.com/ridhorayputraa/ngajar/blob/master/1.)%20HTML/index.html"
+      },
+      {
+        "title": "Ayokk Ngoding(vi)",
+        "content": [
+          "Terlalu gampang???",
+          "Coba tantangan ini",
+          "Load imagenya dari folder lokal bernama /public/images/",
+          "Pisah bagian profil dan bagian hobi ke dalam 2 file HTML yang terpisah, dan gabungkan ke dalam index.html ini",
+          "(Hint: gunakan <a>)"
+        ]
+      },
+      {
+        "title": "Ayokk Coba tag lain",
+        "content": [
+          "Buat sebuah file baru dengan nama index-2.html",
+          "Tambahkan kode HTML di bawah ini ke dalam file tersebut",
+          "Load imagenya dari folder lokal bernama /public/images/",
+          "Pisah bagian profil dan bagian hobi ke dalam 2 file HTML yang terpisah, dan gabungkan ke dalam index.html ini",
+          "(Hint: gunakan <a>)"
+        ]
+      },
+      {
+        "title": "Ayokk Coba tag lain(ii)",
+        "content": [""],
+        "image": "/assets/image/html/img-html-5.png"
+      },
+      {
+        "title": "Ayokk Coba tag lain(iii)",
+        "content": [""],
+        "image": "/assets/image/html/img-html-6.png"
+      },
+      {
+        "title": "Ayokk Coba tag lain(iv)",
+        "content": [""],
+        "image": "/assets/image/html/img-html-7.png"
+      },
+      {
+        "title": "Ayokk Coba tag lain(v)",
+        "content": ["Ketinggalan yak ?", "Bisa liat di bawah sini yaa"],
+        "url": "https://github.com/ridhorayputraa/ngajar/blob/master/1.)%20HTML/index-2.html"
+      },
+      {
+        "title": "Selesai🎊🎊🎊",
+        "content": [
+          "QnA Time!",
+          "Silahkan kalian tanyain yaa terkait HTML ini, Pertanyaan apapun pasti dijawab:))"
+        ]
+      }
+    ],
+    "schedule": [
+      {
+        "day": "Sabtu",
+        "date": "26-10-2024",
+        "time": "13:30 - 15:00"
       }
     ]
   },
   "pengenalan-css": {
     "title": "Pengenalan CSS",
+    "subjectUri": "pengenalan-css",
     "slides": [
       {
         "title": "Pengenalan CSS",
-        "content": ["Sabar duluk"]
+        "content": [""]
+      },
+      {
+        "title": "Pengertian CSS",
+        "content": [
+          "CSS = Cascading Style Sheet",
+          "Terpakai untuk apa ?",
+          "Bosan kan dengan tampilan web yang seperti ini?"
+        ]
+      },
+      {
+        "title": "CSS",
+        "content": [
+          "Pengatur tampilan di dalam HTML",
+          "Tampilan apa saja?",
+          "-Jarak elemen (padding, margin)",
+          "-Posisi elemen (absolute, relative, flex, grid)",
+          "-Warna elemen (background-color, color, border-color)",
+          "Ukuran dan ketebalan elemen (width, height, font-size, font-weight)",
+          "transisi dan animasi",
+          "Dsb...."
+        ]
+      },
+      {
+        "title": "CSS(ii)",
+        "content": [
+          "Sebelum memahami attribute yang tadi…",
+          "Kita akan mempelajari terlebih dahulu tentang",
+          "-Cara menuliskan CSS",
+          "-Box Model"
+        ]
+      },
+      {
+        "title": "CSS(iii)",
+        "content": ["Coming soon"]
+      }
+    ],
+    "schedule": [
+      {
+        "day": "Sabtu",
+        "date": "26-10-2024",
+        "time": "13:30 - 15:00"
       }
     ]
   },
-  "pengenalan-javascrip": {
+  "pengenalan-javascript": {
     "title": "Pengenalan JavaScript",
+    "subjectUri": "pengenalan-javascript",
     "slides": [
       {
         "title": "Pengenalan JavaScript",
         "content": ["Sabar duluk"]
+      }
+    ],
+    "schedule": [
+      {
+        "day": "Minggu",
+        "date": "27-10-2024",
+        "time": "13:30 - 15:00"
+      }
+    ]
+  },
+  "pengenalan-git": {
+    "title": "Pengenalan Git",
+    "subjectUri": "pengenalan-git",
+    "slides": [
+      {
+        "title": "Pengenalan Git",
+        "content": ["Sabar duluk"]
+      }
+    ],
+    "schedule": [
+      {
+        "day": "Sabtu",
+        "date": "2-11-2024",
+        "time": "13:30 - 15:00"
       }
     ]
   }

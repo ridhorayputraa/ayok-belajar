@@ -4,10 +4,14 @@ function Footer() {
   return (
     <footer>
       <div className="footer-container mx-auto py-8 flex flex-col items-center">
-        <p>Made With ❤️</p>
+        <h2 className="text-2xl font-bold">Made With ❤️</h2>
         <div className="footer-content-wrapper">
-          <a target="_blank" href="https://ray-dev.vercel.app/">
-           by.Ray
+          <a
+            className="text-xl font-bold"
+            target="_blank"
+            href="https://ray-dev.vercel.app/"
+          >
+            RAY
           </a>
         </div>
       </div>

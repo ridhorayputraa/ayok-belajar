@@ -13,8 +13,10 @@
     "framer-motion": "^11.11.8",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-fancybox": "^0.2.5",
     "react-router-dom": "^6.27.0",
-    "swiper": "^8.4.5"
+    "swiper": "^8.4.5",
+    "yet-another-react-lightbox": "^1.1.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.11.1",

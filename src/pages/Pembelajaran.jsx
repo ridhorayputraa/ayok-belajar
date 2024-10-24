@@ -14,6 +14,8 @@ import "swiper/css/autoplay";
 import "swiper/css/effect-coverflow";
 import "swiper/css/grid";
 import "swiper/css/navigation";
+import { Lightbox } from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 
 import dataPembelajaran from "../data/dataPembelajaran.json";
 import Layout from "../components/Layout";
@@ -21,6 +23,14 @@ import Layout from "../components/Layout";
 function Pembelajaran() {
   const { subject } = useParams();
   const [materi, setMateri] = useState(null);
+  const [open, setOpen] = useState(false); // State to control lightbox
+  const [slides, setSlides] = useState([]); // Store the images for the lightbox
+
+  const handleImageClick = (slideImages) => {
+    const imageSlides = slideImages.map((image) => ({ src: image }));
+    setSlides(imageSlides);
+    setOpen(true);
+  };
 
   useEffect(() => {
     setMateri(dataPembelajaran[subject]);
@@ -53,7 +63,7 @@ function Pembelajaran() {
                 spaceBetween={16}
                 direction={"horizontal"}
                 onSwiper={(swiper) => swiper}
-                className="swiper-perangkat"
+                className="swiper-pembelajaran"
               >
                 {materi.slides.map((slide, index) => (
                   <SwiperSlide key={index}>
@@ -63,7 +73,7 @@ function Pembelajaran() {
                       </h1>
                       {slide.content && slide.content.length > 0 ? (
                         slide.content.map((item, idx) => (
-                          <h3 key={idx} className="text-xl text-slate-100">
+                          <h3 key={idx} className="text-2xl text-slate-100">
                             {item}
                           </h3>
                         ))
@@ -71,6 +81,34 @@ function Pembelajaran() {
                         <p className="text-xl text-slate-100">
                           Materi belum tersedia.
                         </p>
+                      )}
+                      {slide.image && (
+                        <div className="image">
+                          {/* Clicking the image opens the lightbox */}
+                          <img
+                            src={slide.image}
+                            alt={slide.title}
+                            onClick={() => handleImageClick([slide.image])}
+                            className="cursor-pointer max-640"
+                            style={{
+                              width: "100%",
+                              height: "auto",
+                              objectFit: "cover",
+                            }}
+                          />
+                        </div>
+                      )}
+                      {slide.url && (
+                        <div className="mt-4">
+                          <a
+                            href={slide.url}
+                            className="text-lg text-blue-500 underline"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            Lihat lebih lanjut
+                          </a>
+                        </div>
                       )}
                     </div>
                   </SwiperSlide>
@@ -80,6 +118,7 @@ function Pembelajaran() {
           </div>
         </div>
       </section>
+      <Lightbox open={open} close={() => setOpen(false)} slides={slides} />
     </Layout>
   );
 }

@@ -14,18 +14,35 @@ function Navbar() {
           <div className="nav-menu">
             <div className="nav-logo"></div>
             <ul className="menu-nav flex flex-row justify-around">
-              <li>
-                <Link className="medium" to="/">
+              <li className="navbar-wrapper">
+                <Link
+                  className={`medium nav-content text-lg ${
+                    path === "/" || path.startsWith("/pembelajaran")
+                      ? "active"
+                      : ""
+                  }`}
+                  to="/"
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link className="medium" to="/tugas">
+                <Link
+                  className={`medium nav-content text-lg ${
+                    path === "/tugas" ? "active" : ""
+                  }`}
+                  to="/tugas"
+                >
                   Tugas
                 </Link>
               </li>
               <li>
-                <Link className="medium" to="/jadwal">
+                <Link
+                  className={`medium nav-content text-lg ${
+                    path === "/jadwal" ? "active" : ""
+                  }`}
+                  to="/jadwal"
+                >
                   Jadwal
                 </Link>
               </li>

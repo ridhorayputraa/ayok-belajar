@@ -39,7 +39,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-header{
+header {
   position: sticky;
   top: 0;
   z-index: 999999999999999999;
@@ -47,7 +47,30 @@ header{
 
 header,
 footer {
-  background-color: var(--c-black);
+  background-color: #00000063;
+  backdrop-filter: blur(10px);
+}
+
+/*====================================== SECTION NAVBAR ======================================*/
+
+.container-nav {
+  padding: 1.5rem 0.5rem;
+}
+
+.container-nav {
+}
+
+.menu-nav .nav-content {
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  transition: all 0.3s;
+}
+
+.menu-nav .nav-content.active,
+.menu-nav .nav-content:hover {
+  background-color: var(--c-white);
+  color: var(--c-black);
 }
 
 /*====================================== SECTION COMPONENT WORDING ======================================*/
@@ -259,8 +282,51 @@ section {
   min-height: 100vh;
 }
 
+.learning-content-card {
+  padding: 1rem 1.5rem;
+  transition: all 0.3s;
+  background-color: rgb(15 23 42);
+  border-radius: 12px;
+  box-shadow: 5px 5px 2px 0px rgba(212, 212, 212, 0.25);
+  -webkit-box-shadow: 5px 5px 2px 0px rgba(212, 212, 212, 0.25);
+  -moz-box-shadow: 5px 5px 2px 0px rgba(212, 212, 212, 0.25);
+}
+
+.learning-content-card:hover {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+
 /*====================================== SECTION PEMBELAJARAN PAGE ======================================*/
 section.section-pembelajaran {
   margin: 0 auto;
   padding: 0;
+}
+
+.react-fancybox .close-btn {
+  cursor: pointer;
+}
+
+.react-fancybox .thumbnail {
+  cursor: pointer;
+  width: fit-content;
+}
+
+.react-fancybox .image-box img {
+  max-height: 25rem !important;
+}
+
+/*====================================== SECTION JADWAL ======================================*/
+section.section-jadwal {
+  min-height: 100vh;
+}
+
+/*====================================== SECTION PEMBELAJARAN PAGE ======================================*/
+section.section-tugas {
+  min-height: 100vh;
+}
+
+.yarl__portal {
+  z-index: 999999999999999;
 }

@@ -16,5 +16,11 @@
     "subject": "pengenalan-javascript",
     "title": "Pengenalan JavaScript",
     "icon": "javascript"
+  },
+  {
+    "id": 3,
+    "subject": "pengenalan-git",
+    "title": "Pengenalan Git",
+    "icon": "git"
   }
 ]
