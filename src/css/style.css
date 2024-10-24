@@ -209,6 +209,10 @@ footer {
   max-width: 30rem !important;
 }
 
+.max-560 {
+  max-width: 35rem !important;
+}
+
 .max-640 {
   max-width: 40rem !important;
 }

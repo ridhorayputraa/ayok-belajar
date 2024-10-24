@@ -89,7 +89,7 @@ function Pembelajaran() {
                             src={slide.image}
                             alt={slide.title}
                             onClick={() => handleImageClick([slide.image])}
-                            className="cursor-pointer max-640"
+                            className="cursor-pointer max-560"
                             style={{
                               width: "100%",
                               height: "auto",
