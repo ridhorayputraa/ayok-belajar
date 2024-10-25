@@ -247,13 +247,150 @@
       },
       {
         "title": "CSS(iii)",
-        "content": ["Coming soon"]
+        "content": [
+          "Penulisan CSS - Inline",
+          "Menuliskan CSS langsung di dalam tag html"
+        ],
+        "image": "/assets/image/css/img-css-1.png"
+      },
+      {
+        "title": "Penulisan CSS - Inline (Demo)",
+        "content": ["Kode dapat dilihat pada tautan di bawah"],
+        "url": "https://github.com/ridhorayputraa/ngajar/blob/master/2.)%20CSS/index.html"
+      },
+      {
+        "title": "Penulisan CSS - Internal",
+        "content": ["Menuliskan CSS di dalam tag style di HTML"],
+        "image": "/assets/image/css/img-css-2.png"
+      },
+      {
+        "title": "Penulisan CSS - Internal (demo)",
+        "content": ["Kode dapat dilihat pada tautan di bawah"],
+        "url": "https://github.com/ridhorayputraa/ngajar/blob/master/2.)%20CSS/index-2.html"
+      },
+      {
+        "title": "Penulisan CSS - External",
+        "content": ["Menuliskan CSS di luar file HTML"],
+        "image": "/assets/image/css/img-css-3.png"
+      },
+      {
+        "title": "Penulisan CSS - External (demo)",
+        "content": ["Kode dapat dilihat pada tautan di bawah"],
+        "url": "https://github.com/ridhorayputraa/ngajar/tree/master/2.)%20CSS/css-external"
+      },
+      {
+        "title": "CSS - Box Model",
+        "content": [
+          "Semua yang ditampilkan oleh CSS adalah sebuah box",
+          "Mempelajari box model bekerja adalah fundamental dari CSS.",
+          "Yuk kita lihat contoh kode HTML dengan sedikit CSS di halaman berikut"
+        ]
+      },
+      {
+        "title": "CSS - Box Model(ii)",
+        "content": [""],
+        "image": "/assets/image/css/img-css-4.png"
+      },
+      {
+        "title": "CSS - Box Model (iii)",
+        "content": ["Kode dapat dilihat pada tautan di bawah"],
+        "url": "https://github.com/ridhorayputraa/ngajar/blob/master/2.)%20CSS/index-3.html"
+      },
+      {
+        "title": "CSS - Box Model(iv)",
+        "content": ["Konsep Box Model"],
+        "image": "/assets/image/css/img-css-5.png"
+      },
+      {
+        "title": "CSS - Box Model(v)",
+        "content": [
+          "QUICK QUIZZ !",
+          "Berapakah total width dari code css sebelumnya ?",
+          "A. 140px",
+          "B. 100px",
+          "C. 142px",
+          "D. 120px",
+          "E. Au ah, pusing jawabnya"
+        ]
+      },
+      {
+        "title": "CSS - Box Model(vi)",
+        "content": ["Penjelasan !", "-", "-"]
+      },
+      {
+        "title": "CSS - Ukuran Absolut dan Relatif",
+        "content": [
+          "Contoh: PX = ukuran Absolute",
+          "em, rem, vw, % = Ukuran Relative"
+        ]
+      },
+      {
+        "title": "CSS - Ukuran Absolut dan Relatif(ii)",
+        "content": [
+          "Absolute",
+          "-Ukurannya sama, apapun parentnya, atau apapun ukuran layarnya",
+          "-Lebih mudah digunakan, tapi… tidak responsif",
+          "Relative",
+          "-Berguna untuk desain website responsif",
+          "-Ukuran bisa berubah relatif terhadap parent atau ukuran layar",
+          "-Lebih sulit digunakan"
+        ]
+      },
+      {
+        "title": "CSS - Ukuran Absolut dan Relatif(iii)",
+        "content": [
+          "Macam ukuran Relatif",
+          "% - Ukurannya relatif terhadap elemen parent",
+          "em - Ukurannya relatif terhadap font-size elemen saat ini",
+          "rem - Ukurannya relatif terhadap font-size root elemen (root em)",
+          "vh - Ukurannya relatif terhadap tinggi viewport (ukuran jendela browser). 1vh = 1/100 dari tinggi viewport",
+          "vw - Ukurannya relatif terhadap lebar dari viewport. 1vw = 1/100 dari lebar viewport",
+          "vmin - Ukurannya relatif terhadap ukuran viewport yang lebih kecil (tergantung orientasi portrait atau landscape)",
+          "vmax - Sama dengan vmin, hanya tergantung orientasi yang lebih besar"
+        ]
+      },
+      {
+        "title": "CSS - Selektor",
+        "content": [
+          "CSS - Selektor",
+          "Nah sekarang kita sudah belajar bagaimana ukurannya dan peletakkan posisinya",
+          "Sekarang kita punya kasus baru",
+          "Misalnya sekarang kita memiliki 2 elemen <div>, satu ingin diberikan warna background #4285F4 dan yang satu lagi ingin diberikan warna #34A853",
+          "Bagaimana memilah kedua <div> tersebut?"
+        ]
+      },
+      {
+        "title": "CSS - Selektor (Coming soon)",
+        "content": [
+          "Kalo udah tau jawabannya keren! kalo belum, besok kita bahas ya",
+          "Besok (Minggu - 27 Oktober 2024) kita akan membahas:",
+          "-Css Selector",
+          "-Css Layouting",
+          "Pasti abis ini langsung bisa bikin web yang ganteng:))"
+        ]
       }
     ],
     "schedule": [
       {
         "day": "Sabtu",
         "date": "26-10-2024",
+        "time": "13:30 - 15:00"
+      }
+    ]
+  },
+  "css-selector-layouting": {
+    "title": "Css Selector dan layouting",
+    "subjectUri": "css-selector-layouting",
+    "slides": [
+      {
+        "title": "Css Selector dan layouting",
+        "content": ["Besok kita bahas yaa"]
+      }
+    ],
+    "schedule": [
+      {
+        "day": "Minggu",
+        "date": "27-10-2024",
         "time": "13:30 - 15:00"
       }
     ]
@@ -269,8 +406,8 @@
     ],
     "schedule": [
       {
-        "day": "Minggu",
-        "date": "27-10-2024",
+        "day": "Sabtu",
+        "date": "2-11-2024",
         "time": "13:30 - 15:00"
       }
     ]
@@ -286,8 +423,8 @@
     ],
     "schedule": [
       {
-        "day": "Sabtu",
-        "date": "2-11-2024",
+        "day": "Minggu",
+        "date": "3-11-2024",
         "time": "13:30 - 15:00"
       }
     ]
