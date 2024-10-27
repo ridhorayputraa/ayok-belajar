@@ -372,8 +372,8 @@
     ],
     "schedule": [
       {
-        "day": "Sabtu",
-        "date": "26-10-2024",
+        "day": "Minggu",
+        "date": "27-10-2024",
         "time": "13:30 - 15:00"
       }
     ]
@@ -384,7 +384,114 @@
     "slides": [
       {
         "title": "Css Selector dan layouting",
-        "content": ["Besok kita bahas yaa"]
+        "content": [""]
+      },
+      {
+        "title": "CSS - Selektor",
+        "content": [
+          "Cara memilih elemen di dalam CSS",
+          "-tag HTML (elemen)",
+          "class",
+          "id",
+          "pengelompokkan (grouping)",
+          "kombinasi (combinator)",
+          "attribute",
+          "pseudo",
+          "universal"
+        ]
+      },
+      {
+        "title": "CSS - Selektor - tag HTML",
+        "content": [
+          "Memilih elemen dengan tag HTML secara langsung",
+          "Contoh Kasus"
+        ],
+        "image": "/assets/image/css-selector/img-css-selector-1.png"
+      },
+      {
+        "title": "CSS - Selektor - tag HTML(ii)",
+        "content": ["Supaya lebih jelas mari kita lihat dengan kode ini"],
+        "url": "https://github.com/ridhorayputraa/ngajar/tree/master/3.)%20CSS%20Selector%20%26%20Layouting"
+      },
+      {
+        "title": "CSS - Selektor - Class",
+        "content": [
+          "Memilih elemen dengan atribut class di dalam elemen html",
+          "Contoh CSS"
+        ],
+        "image": "/assets/image/css-selector/img-css-selector-2.png"
+      },
+      {
+        "title": "CSS - Selektor - id",
+        "content": [
+          "Memilih elemen dengan atribut id di dalam elemen html",
+          "Contoh CSS"
+        ],
+        "image": "/assets/image/css-selector/img-css-selector-3.png"
+      },
+      {
+        "title": "CSS - Selektor - id(ii)",
+        "content": [
+          "Terlihat mirip dengan class yah",
+          "Namun di sini class ada perbedaan dengan id:",
+          "id adalah atribut unik di dalam html, tidak boleh ada elemen lain dengan nama id yang sama (hanya bisa digunakan terhadap satu elemen di html)",
+          "class adalah atribut yang tidak di dalam html, boleh ada elemen lain dengan nama class yang sama (bisa digunakan berkali kali)",
+          "[!] Selalu pilih menggunakan class daripada id di dalam css apabila memungkinkan"
+        ]
+      },
+      {
+        "title": "CSS - Selektor - Grouping",
+        "content": [
+          "Selektor grouping akan mengelompokkan semua elemen html dengan definisi yang sama.",
+          "digunakan untuk menulis kode yang lebih rapih dan tidak berulang"
+        ]
+      },
+      {
+        "title": "CSS - Selektor - Grouping (ii)",
+        "content": [
+          "Contoh kasus",
+          "Ingin mengelompokkan h1 dan p agar memiliki teks di tengah tengah"
+        ],
+        "image": "/assets/image/css-selector/img-css-selector-4.png"
+      },
+      {
+        "title": "Praktik Baik penggunaan CSS",
+        "content": [
+          "Gunakan class sebisa mungkin, jangan gunakan id apabila memungkinkan",
+          "Hindari penggunaan !important , gunakan specificity CSS ( scoring prioritas pada CSS )",
+          "Pada css, Posisi menentukan prestasi, hati hati !",
+          "Bacaan mengenai CSS specificity"
+        ],
+        "url": "https://css-tricks.com/specifics-on-css-specificity/"
+      },
+      {
+        "title": "Praktik Baik penggunaan CSS(ii)",
+        "content": ["Bacaan mengenai CSS specificity", "Visualisasi"],
+        "url": "http://specifishity.com/"
+      },
+      {
+        "title": "CSS - Tata Letak - layouting",
+        "content": ["Pakai apa tuh?", "-Menggunakan flex", "Menggunakan grid"]
+      },
+      {
+        "title": "Layouting dengan flex",
+        "content": ["Kode layout dengan flex"],
+        "url": "https://github.com/ridhorayputraa/ngajar/tree/master/3.)%20CSS%20Selector%20%26%20Layouting/layouting"
+      },
+      {
+        "title": "Layouting dengan flex(ii)",
+        "content": [
+          "Kesimpulan",
+          "-Flexbox lebih fleksibel",
+          "-Flexbox menghasilkan css yang lebih kompleks",
+          "-[!] ada pengembangan dari Flexbox lagi yang bernama grid",
+          "[!] grid memiliki konfigurasi awal yang sedikit lebih kompleks daripada flex"
+        ]
+      },
+      {
+        "title": "Layouting dengan flex (iii)",
+        "content": ["Referensi", "Flex"],
+        "url": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
       }
     ],
     "schedule": [
