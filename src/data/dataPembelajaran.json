@@ -496,9 +496,9 @@
     ],
     "schedule": [
       {
-        "day": "Minggu",
-        "date": "27-10-2024",
-        "time": "13:30 - 15:00"
+        "day": "Senin",
+        "date": "28-10-2024",
+        "time": "20:00 - 21:00"
       }
     ]
   },
@@ -532,6 +532,227 @@
       {
         "day": "Minggu",
         "date": "3-11-2024",
+        "time": "13:30 - 15:00"
+      }
+    ]
+  },
+  "javascript-struktur-data": {
+    "title": "Javascript Struktur Data",
+    "subjectUri": "javascript-struktur-data",
+    "slides": [
+      {
+        "title": "Javascript Struktur Data",
+        "content": ["Sabar duluk"]
+      }
+    ],
+    "schedule": [
+      {
+        "day": "Senin",
+        "date": "11-11-2024",
+        "time": "20:00 - 21:00"
+      }
+    ]
+  },
+  "javascript-alur-logika": {
+    "title": "JavaScript - Alur Logika",
+    "subjectUri": "javascript-alur-logika",
+    "slides": [
+      {
+        "title": "JavaScript - Alur Logika",
+        "content": ["Sabar duluk"]
+      }
+    ],
+    "schedule": [
+      {
+        "day": "Sabtu",
+        "date": "16-11-2024",
+        "time": "13:30 - 15:00"
+      }
+    ]
+  },
+  "javascript-fungsi": {
+    "title": "JavaScript - Fungsi",
+    "subjectUri": "javascript-fungsi",
+    "slides": [
+      {
+        "title": "JavaScript - Fungsi",
+        "content": ["Sabar duluk"]
+      }
+    ],
+    "schedule": [
+      {
+        "day": "Minggu",
+        "date": "17-11-2024",
+        "time": "13:30 - 15:00"
+      }
+    ]
+  },
+  "javascript-fungsi-algo": {
+    "title": "JavaScript - Fungsi Algo",
+    "subjectUri": "javascript-fungsi-algo",
+    "slides": [
+      {
+        "title": "JavaScript - Fungsi Algo",
+        "content": ["Sabar duluk"]
+      }
+    ],
+    "schedule": [
+      {
+        "day": "Senin",
+        "date": "17-11-2024",
+        "time": "13:30 - 15:00"
+      }
+    ]
+  },
+  "javascript-callback": {
+    "title": "JavaScript - Callback",
+    "subjectUri": "javascript-callback",
+    "slides": [
+      {
+        "title": "JavaScript - Callback",
+        "content": ["Sabar duluk"]
+      }
+    ],
+    "schedule": [
+      {
+        "day": "Sabtu",
+        "date": "23-11-2024",
+        "time": "13:30 - 15:00"
+      }
+    ]
+  },
+  "javascript-callback-algo": {
+    "title": "JavaScript - Callback Algo",
+    "subjectUri": "javascript-callback-algo",
+    "slides": [
+      {
+        "title": "JavaScript - Callback Algo",
+        "content": ["Sabar duluk"]
+      }
+    ],
+    "schedule": [
+      {
+        "day": "Minggu",
+        "date": "24-11-2024",
+        "time": "13:30 - 15:00"
+      }
+    ]
+  },
+  "javascript-promise": {
+    "title": "JavaScript - Promise",
+    "subjectUri": "javascript-promise",
+    "slides": [
+      {
+        "title": "JavaScript - Promise",
+        "content": ["Sabar duluk"]
+      }
+    ],
+    "schedule": [
+      {
+        "day": "Senin",
+        "date": "25-11-2024",
+        "time": "13:30 - 15:00"
+      }
+    ]
+  },
+  "pengenalan-react": {
+    "title": "Pengenalan ReactJs",
+    "subjectUri": "pengenalan-react",
+    "slides": [
+      {
+        "title": "Pengenalan ReactJs",
+        "content": ["Sabar duluk"]
+      }
+    ],
+    "schedule": [
+      {
+        "day": "Sabtu",
+        "date": "30-11-2024",
+        "time": "13:30 - 15:00"
+      }
+    ]
+  },
+  "react-component-ui-framework": {
+    "title": "React Js - Component UI Famework",
+    "subjectUri": "react-component-ui-framework",
+    "slides": [
+      {
+        "title": "React Js - Component UI Famework",
+        "content": ["Sabar duluk"]
+      }
+    ],
+    "schedule": [
+      {
+        "day": "Sabtu",
+        "date": "30-11-2024",
+        "time": "13:30 - 15:00"
+      }
+    ]
+  },
+  "react-component-ui-framework-2": {
+    "title": "React Js - Component UI Famework 2",
+    "subjectUri": "react-component-ui-framework-2",
+    "slides": [
+      {
+        "title": "React Js - Component UI Famework 2",
+        "content": ["Sabar duluk"]
+      }
+    ],
+    "schedule": [
+      {
+        "day": "Sabtu",
+        "date": "30-11-2024",
+        "time": "13:30 - 15:00"
+      }
+    ]
+  },
+  "react-navigasi": {
+    "title": "React Js - Navigasi",
+    "subjectUri": "react-navigasi",
+    "slides": [
+      {
+        "title": "React Js - Navigasi",
+        "content": ["Sabar duluk"]
+      }
+    ],
+    "schedule": [
+      {
+        "day": "Sabtu",
+        "date": "30-11-2024",
+        "time": "13:30 - 15:00"
+      }
+    ]
+  },
+  "react-list-axios": {
+    "title": "React Js - List & Axios",
+    "subjectUri": "react-list-axios",
+    "slides": [
+      {
+        "title": "React Js - List & Axios",
+        "content": ["Sabar duluk"]
+      }
+    ],
+    "schedule": [
+      {
+        "day": "Sabtu",
+        "date": "30-11-2024",
+        "time": "13:30 - 15:00"
+      }
+    ]
+  },
+  "react-deployment": {
+    "title": "React Js - Deployment",
+    "subjectUri": "react-deployment",
+    "slides": [
+      {
+        "title": "React Js - Deployment",
+        "content": ["Sabar duluk"]
+      }
+    ],
+    "schedule": [
+      {
+        "day": "Sabtu",
+        "date": "30-11-2024",
         "time": "13:30 - 15:00"
       }
     ]

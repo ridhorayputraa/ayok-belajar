@@ -7,6 +7,9 @@ import SvgGit from "../components/svg/SvgGit";
 
 import data from "../data/data.json";
 import LearningContentCard from "../components/LearningContentCard";
+import SvgReact from "../components/svg/SvgReact";
+import SvgReactRouter from "../components/svg/SvgReactRouter";
+import SvgVercell from "../components/svg/SvgVercell";
 
 function Home() {
   const [learningContent, setLearningContent] = useState([]);
@@ -25,6 +28,12 @@ function Home() {
         return <SvgJavascript />;
       case "git":
         return <SvgGit />;
+      case "react":
+        return <SvgReact />;
+      case "react-router":
+        return <SvgReactRouter />;
+      case "vercell":
+        return <SvgVercell />;
       default:
         return null;
     }
@@ -36,7 +45,7 @@ function Home() {
           <h1 className="text-4xl text-center font-bold">
             Konten Pembelajaran
           </h1>
-          <ul className="learning-content-rapper flex items-center flex-wrap max-840 gap-8 mx-auto mt-12">
+          <ul className="learning-content-rapper flex items-center flex-wrap max-1024 gap-8 mx-auto mt-12">
             {learningContent.map((item, index) => (
               <li key={index}>
                 <LearningContentCard

@@ -28,5 +28,83 @@
     "subject": "pengenalan-git",
     "title": "Pengenalan Git",
     "icon": "git"
+  },
+  {
+    "id": 5,
+    "subject": "javascript-struktur-data",
+    "title": "Javascript - Struktur Data",
+    "icon": "javascript"
+  },
+  {
+    "id": 6,
+    "subject": "javascript-alur-logika",
+    "title": "JavaScript - Alur Logika",
+    "icon": "javascript"
+  },
+  {
+    "id": 7,
+    "subject": "javascript-fungsi",
+    "title": "JavaScript - Fungsi",
+    "icon": "javascript"
+  },
+  {
+    "id": 8,
+    "subject": "javascript-fungsi-algo",
+    "title": "JavaScript - Fungsi Algo",
+    "icon": "javascript"
+  },
+  {
+    "id": 9,
+    "subject": "javascript-callback",
+    "title": "JavaScript - Callback",
+    "icon": "javascript"
+  },
+  {
+    "id": 10,
+    "subject": "javascript-callback-algo",
+    "title": "JavaScript - Callback Algo",
+    "icon": "javascript"
+  },
+  {
+    "id": 11,
+    "subject": "javascript-promise",
+    "title": "JavaScript - Promise",
+    "icon": "javascript"
+  },
+  {
+    "id": 12,
+    "subject": "pengenalan-react",
+    "title": "Pengenalan React Js",
+    "icon": "react"
+  },
+  {
+    "id": 13,
+    "subject": "react-component-ui-framework",
+    "title": "React Js - Component UI Famework",
+    "icon": "react"
+  },
+  {
+    "id": 13,
+    "subject": "react-component-ui-framework-2",
+    "title": "React Js - Component dan UI Framework 2",
+    "icon": "react"
+  },
+  {
+    "id": 14,
+    "subject": "react-navigasi",
+    "title": "React Js - Navigasi",
+    "icon": "react-router"
+  },
+  {
+    "id": 13,
+    "subject": "react-list-axios",
+    "title": "React Js - List & Axios",
+    "icon": "react"
+  },
+  {
+    "id": 14,
+    "subject": "react-deployment",
+    "title": "React Js - Deployment",
+    "icon": "vercell"
   }
 ]
