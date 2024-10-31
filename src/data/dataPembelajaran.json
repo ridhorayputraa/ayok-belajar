@@ -508,9 +508,141 @@
     "slides": [
       {
         "title": "Pengenalan JavaScript",
-        "content": ["Sabar duluk"]
+        "content": [""]
+      },
+      {
+        "title": "Agenda",
+        "content": ["-Instalasi NodeJs", "-Yuk Kenalan sama Javascript"]
+      },
+      {
+        "title": "Instalasi NodeJs",
+        "content": [
+          "-Pilih versi LTS !",
+          "-Sesuaikan dengan Sistem Operasi yang digunakan"
+        ],
+        "url": "https://nodejs.org/en/download/package-manager"
+      },
+      {
+        "title": "Algoritma(ii)",
+        "content": [""],
+        "image": "/assets/image/js-pengenalan/image-js-1.png"
+      },
+      {
+        "title": "Algoritma(iii)",
+        "content": ["Mari Bermain"],
+        "url": "https://www.google.com/logos/2017/logo17/logo17.html"
+      },
+      {
+        "title": "Yuk kenalan sama JavaScript",
+        "content": ["-Variabel", "-Tipe Data", "-Operator", "-Alur Kontrol"]
+      },
+      {
+        "title": "Variabel",
+        "content": [
+          "Sesuatu yang menyimpan suatu nilai, yang bisa diganti nantinya."
+        ]
+      },
+      {
+        "title": "Variabel(ii)",
+        "content": [
+          "Umumnya dideklarasikan dengan cara:",
+          "-cara 1: var",
+          "-cara 2: let",
+          "-cara 3: const",
+          "Bedanya apa???"
+        ]
+      },
+      {
+        "title": "Variabel(iii)",
+        "content": [
+          "Umumnya dideklarasikan dengan cara:",
+          "-var adalah cara penulisan lama, sebaiknya dihindari",
+          "-let digunakan untuk variabel yang BOLEH diubah nantinya",
+          "-const (constant) digunakan untuk variabel yang TIDAK BOLEH diubah nantinya"
+        ]
+      },
+      {
+        "title": "Variabel(iv)",
+        "content": ["Mari kita liat contoh kode di bawah ini"],
+        "image": "/assets/image/js-pengenalan/image-js-2.png"
+      },
+      {
+        "title": "Variabel(v)",
+        "content": ["Apakah hasil dari potongan kode di bawah ini?"],
+        "image": "/assets/image/js-pengenalan/image-js-3.png"
+      },
+      {
+        "title": "Tipe Data",
+        "content": [
+          "Primitif",
+          "-Boolean",
+          "-Null",
+          "-Undefined",
+          "-Number",
+          "-String",
+          "-Objek"
+        ]
+      },
+      {
+        "title": "Tipe Data(ii)",
+        "content": [
+          "Boolean",
+          "Tipe data benar atau salah (true / false)",
+          "Number",
+          "Tipe data untuk angka (1, 3.14)",
+          "String",
+          "Tipe data untuk tulisan ('halo', 'dunia')"
+        ]
+      },
+      {
+        "title": "Tipe Data(iii)",
+        "content": [
+          "Null",
+          "Tipe data yang menyatakan kosong",
+          "Undefined",
+          "Tipe data untuk variabel yang sudah ada, tapi belum di-assign, belum ditetapkan"
+        ]
+      },
+      {
+        "title": "Tipe data dinamis",
+        "content": [
+          "JavaScript menganut tipe data yang dinamis",
+          "(tipe data dalam variabel boleh diganti kapanpun)"
+        ],
+        "image": "/assets/image/js-pengenalan/image-js-4.png"
+      },
+      {
+        "title": "Operator",
+        "content": ["Operator Aritmatika", "Operator Relasi", "Operator Logika"]
+      },
+      {
+        "title": "Operator Aritmatika",
+        "content": ["Operator yang berhubungan dengan perhitungan matematika"],
+        "image": "/assets/image/js-pengenalan/image-js-5.png"
+      },
+      {
+        "title": "Operator Relasi",
+        "content": ["Operator yang berhubungan dengan relasi antar variabel"],
+        "image": "/assets/image/js-pengenalan/image-js-6.png"
+      },
+      {
+        "title": "Operator Relasi(ii)",
+        "content": ["Operator yang berhubungan dengan relasi antar variabel"],
+        "image": "/assets/image/js-pengenalan/image-js-7.png"
+      },
+      {
+        "title": "Operator Logika",
+        "content": [
+          "Operator yang berhubungan dengan Gerbang Logika (AND / OR)"
+        ],
+        "image": "/assets/image/js-pengenalan/image-js-8.png"
+      },
+      {
+        "title": "Selesai :)",
+        "content": [""]
       }
     ],
+
     "schedule": [
       {
         "day": "Sabtu",

@@ -45,7 +45,7 @@ function Home() {
           <h1 className="text-4xl text-center font-bold">
             Konten Pembelajaran
           </h1>
-          <ul className="learning-content-rapper flex items-center flex-wrap max-1024 gap-8 mx-auto mt-12">
+          <ul className="learning-content-rapper flex items-center justify-center flex-wrap max-1024 gap-8 mx-auto mt-12">
             {learningContent.map((item, index) => (
               <li key={index}>
                 <LearningContentCard
