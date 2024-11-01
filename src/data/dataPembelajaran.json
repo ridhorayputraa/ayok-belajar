@@ -656,15 +656,70 @@
     "subjectUri": "pengenalan-git",
     "slides": [
       {
-        "title": "Pengenalan Git",
-        "content": ["Sabar duluk"]
+        "title": "Pengenalan Git & Linux Command",
+        "content": [""]
+      },
+      {
+        "title": "Agenda",
+        "content": ["-CLI", "-Linux Command", "-Git", "-Github"]
+      },
+      {
+        "title": "CLI",
+        "content": [
+          "Command Line Interface (CLI) adalah sebuah tampilan antarmuka yang dinavigasikan dengan menuliskan perintah, bukan dengan menggunakan gestur mouse / tampilan GUI."
+        ]
+      },
+      {
+        "title": "Tipe- tipe CLI",
+        "content": ["-CMD", "-PowerShell", "-Bash"]
+      },
+      {
+        "title": "Git",
+        "content": [
+          "-Tool yang sering digunakan dalam pengembangan perangkat lunak",
+          "-Wajib dikuasai oleh programmer zaman kekinian"
+        ]
+      },
+      {
+        "title": "Manfaat Git",
+        "content": [
+          "-Mesin waktu dari kode yang dituliskan di dalam folder (repository)",
+          "-Menyimpan riwayat perubahan file dalam bentuk sejumlah commit, bahkan bisa melihat dilakukan oleh siapa dan kapan",
+          "-Bisa membuat cabang dari fitur kode yang akan dibuat, tanpa perlu dilakukan di tempat utama yang kita miliki, disebut dengan istilah branch"
+        ]
+      },
+      {
+        "title": "Github",
+        "content": [
+          "-Sebuah layanan komputasi awan untuk menyimpan & mengelola repositori git",
+          "-Diakuisisi oleh Microsoft pada tahun 2018",
+          "-Bisa menaruh unlimited proyek yang bersifat publik maupun privat"
+        ]
+      },
+      {
+        "title": "Istilah dalam Git",
+        "content": [
+          "-Repository -> Folder project kita berada",
+          "-remote -> sumber lain yang memiliki repo, di luar komputer kita",
+          "-clone -> mengambil repo dari sumber remote",
+          "-commit -> menyimpan / merekam (snapshot) kode dari repo",
+          "branch -> cabang dari sebuah commit",
+          "checkout -> proses untuk berpindah dari satu commit / satu cabang ke commit / cabang lainnya",
+          "merge -> proses untuk menggabungkan branch",
+          "push -> mengirimkan commit ke repo (Biasanya remote repo)",
+          "pull -> mengambil commit dari repo (biasanya remote repo)"
+        ]
+      },
+      {
+        "title": "Demo",
+        "content": ["Mari kita praktek"]
       }
     ],
     "schedule": [
       {
-        "day": "Minggu",
-        "date": "3-11-2024",
-        "time": "13:30 - 15:00"
+        "day": "Senin",
+        "date": "4-11-2024",
+        "time": "20:00 - 21:30"
       }
     ]
   },
