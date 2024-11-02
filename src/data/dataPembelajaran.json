@@ -729,13 +729,136 @@
     "slides": [
       {
         "title": "Javascript Struktur Data",
-        "content": ["Sabar duluk"]
+        "content": [""]
+      },
+      {
+        "title": "Agenda",
+        "content": [
+          "-Apa itu struktur data",
+          "-Yuk kenalan dengan struktur data di JS",
+          "*Array",
+          "*Object",
+          "*Map dan Set"
+        ]
+      },
+      {
+        "title": "Struktur Data?",
+        "content": [
+          "-Teknik untuk menyimpan dan organisir data",
+          "-Mempermudah untuk modifikasi, navigasi, dan akses data yang diinginkan",
+          "-Digunakan hampir di seluruh area komputer sains dan pemrograman"
+        ]
+      },
+      {
+        "title": "Manfaat Struktur Data",
+        "content": [
+          "-Mengatur dan menggunakan data yang cukup banyak",
+          "-Mencari data dari basis data yang ada",
+          "-Mempermudah dan Mempercepat proses data"
+        ]
+      },
+      {
+        "title": "Intinya Struktur Data",
+        "content": ["Tipe Data tingkat tinggi (non-primitif) di dalam JS"]
+      },
+      {
+        "title": "Array",
+        "content": [
+          "Struktur data yang memperbolehkan kita menyimpan koleksi berbagai nilai di bawah bendera satu variabel",
+          "Ukuran-nya bisa secara dinamis bertambah atau berkurang, sesuai keperluan",
+          "Hanya di JSKarena menganut tipe data dinamis, Array bisa berisi kumpulan tipe data lainnya"
+        ]
+      },
+      {
+        "title": "Array(ii)",
+        "content": [
+          "Cara aksesnya dengan menggunakan index, suatu urutan angka, yang dimulai dari 0 (nol)",
+          "Memiliki beberapa fungsi bawaan yang bisa mempermudah developer dalam mengakses dan memodifikasi array yang dibuat"
+        ]
+      },
+      {
+        "title": "Visualisasi & Penulisan Array",
+        "content": [""],
+        "image": "/assets/image/js-struktur-data/image-strukdat-1.png"
+      },
+      {
+        "title": "Array 2 Dimensi (Nested Array)",
+        "content": [""],
+        "image": "/assets/image/js-struktur-data/image-strukdat-2.png"
+      },
+      {
+        "title": "Tantangan: Array",
+        "content": [
+          "Buat array yang memiliki data sebagai berikut",
+          "-Guru -> Andre, Bima, Charles",
+          "-Murid -> Dodit, Echa, Fina",
+          "-Sekuriti -> Gareng Hilmi Ina"
+        ]
+      },
+      {
+        "title": "Object",
+        "content": [
+          "Sebuah tipe data dalam js yang menyimpan data dengan pasangan kunci : nilai (pair-key value)",
+          "Mirip dengan array, hanya saja mengakses datanya bukan lewat index, tapi melalui properties",
+          "Cocok untuk menyimpan data yang terstruktur, yang merepresentasikan objek di dunia nyata"
+        ]
+      },
+      {
+        "title": "Cara Penulisan Object",
+        "content": [""],
+        "image": "/assets/image/js-struktur-data/image-strukdat-3.png"
+      },
+      {
+        "title": "Kenyataan Dunia yang Pahit",
+        "content": [
+          "Umumnya data memang dibuat dalam bentuk array dan object",
+          "Hanya saja akan sangat umum menemukan data GABUNGAN keduanya (beserta gabungan data primitif lainnya)"
+        ],
+        "image": "/assets/image/js-struktur-data/image-strukdat-3.png"
+      },
+      {
+        "title": "Contoh data Gabungan",
+        "content": [
+          "Data di bawah merupakan gabungan array dengan object yah !"
+        ],
+        "image": "/assets/image/js-struktur-data/image-strukdat-4.png"
+      },
+      {
+        "title": "Map dan Set",
+        "content": [
+          "Sampai sekarang kita mengetahui beberapa hal:",
+          "-Object digunakan untuk menyimpan koleksi data yang memiliki pasangan kunci dan nilai",
+          "-Array digunakan untuk menyimpan koleksi data yang memiliki urutan, berdasarkan index"
+        ]
+      },
+      {
+        "title": "Penggunaan Map",
+        "content": [""],
+        "image": "/assets/image/js-struktur-data/image-strukdat-5.png"
+      },
+      {
+        "title": "Set",
+        "content": [
+          "-Merupakan koleksi data yang spesial",
+          "-kumpulan dari data (tanpa ada kunci), dimana untuk setiap data hanya boleh muncul sekali saja (unik)"
+        ]
+      },
+      {
+        "title": "Penggunaan Set",
+        "content": [""],
+        "image": "/assets/image/js-struktur-data/image-strukdat-6.png"
+      },
+      {
+        "title": "Selesaii",
+        "content": [
+          "Silahkan Tugas nya di kerjakan yahhh"
+        ]
       }
     ],
     "schedule": [
       {
-        "day": "Senin",
-        "date": "11-11-2024",
+        "day": "Rabu",
+        "date": "6-11-2024",
         "time": "20:00 - 21:00"
       }
     ]
@@ -751,9 +874,9 @@
     ],
     "schedule": [
       {
-        "day": "Sabtu",
-        "date": "16-11-2024",
-        "time": "13:30 - 15:00"
+        "day": "Kamis",
+        "date": "7-11-2024",
+        "time": "20:00 - 21:00"
       }
     ]
   },
