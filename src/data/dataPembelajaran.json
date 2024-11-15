@@ -850,9 +850,7 @@
       },
       {
         "title": "Selesaii",
-        "content": [
-          "Silahkan Tugas nya di kerjakan yahhh"
-        ]
+        "content": ["Silahkan Tugas nya di kerjakan yahhh"]
       }
     ],
     "schedule": [
@@ -869,7 +867,181 @@
     "slides": [
       {
         "title": "JavaScript - Alur Logika",
-        "content": ["Sabar duluk"]
+        "content": [
+          "-Pernyataan Kondisional",
+          "-Truthy x Falsy",
+          "Iterasi dan Perulangan"
+        ]
+      },
+      {
+        "title": "Pernyataan Kondisional",
+        "content": [
+          "-Tidak hanya kita yang bisa memilih, kode pun bisa memilih!",
+          "-Pemilihan dilakukan berdasarkan suatu input yang diberikan",
+          "-Contoh: Kalau sedang main game, bila pemain nyawanya 0, maka akan 'Game Over'",
+          "Bagaimanakah cara dev mengoding pernyataan di atas?"
+        ]
+      },
+      {
+        "title": "Pernyataan Kondisional (ii)",
+        "content": [
+          "Kumpulan perintah yang akan dieksekusi apabila kondisi yang didefinisikan adalah true",
+          "-Pernyataan if - else",
+          "-Pernyataan if - else if - else",
+          "-Pernyataan switch"
+        ]
+      },
+      {
+        "title": "Pernyataan if - else",
+        "content": [
+          "-Pernyataan untuk mengecek bila suatu kondisi terjadi, maka akan melakukan sesuatu yang didefinisikan di dalam if",
+          "-Apabila kondisi tersebut tidak terjadi, maka akan melakukan sesuatu yang didefinisikan di dalam else",
+          "-Maksimum kondisi percabangan hanya bisa dua (if ... dan else ...)"
+        ]
+      },
+      {
+        "title": "Pernyataan if - else(ii)",
+        "content": ["Notasi penulisan if - else"],
+        "image": "/assets/image/alur-logika/image-js-1.png"
+      },
+      {
+        "title": "Pernyataan if - else(iii)",
+        "content": ["Notasi penulisan if - else"],
+        "image": "/assets/image/alur-logika/image-js-2.png"
+      },
+      {
+        "title": "Pernyataan if - else if - else",
+        "content": [
+          "-Pernyataan untuk mengecek bila suatu kondisi terjadi, maka akan melakukan sesuatu yang didefinisikan di dalam if",
+          "-Apabila salah, maka akan mencoba untuk mengecek berdasarkan kondisi lainnya lagi di dalam else if",
+          "-Apabila semua kondisi tersebut tidak terjadi, maka akan melakukan sesuatu yang didefinisikan di dalam else",
+          "-Maksimum kondisi percabangan bisa banyak (if ... (1) else if ... (n) else ... (1))"
+        ]
+      },
+      {
+        "title": "Pernyataan if - else if - else(ii)",
+        "content": ["Notasi penulisan if - else if - else"],
+        "image": "/assets/image/alur-logika/image-js-3.png"
+      },
+      {
+        "title": "Pernyataan if - else if - else(iii)",
+        "content": ["Contoh penulisan if - else if - else"],
+        "image": "/assets/image/alur-logika/image-js-4.png"
+      },
+      {
+        "title": "Pernyataan switch",
+        "content": [
+          "-Cara lain dalam penulisan kondisi yang berbeda dari if else if else",
+          "-Tidak baik digunakan apabila hanya ada 2 kondisi",
+          "-Hati hati dengan penulisan case dan jangan lupa break untuk menghentikan *sleding*-an kode"
+        ]
+      },
+      {
+        "title": "Pernyataan switch (ii)",
+        "content": ["-Notasi penulisan switch ... case ..."],
+        "image": "/assets/image/alur-logika/image-js-5.png"
+      },
+      {
+        "title": "Pernyataan switch (iii)",
+        "content": ["-Contoh penulisan switch ... case ..."],
+        "image": "/assets/image/alur-logika/image-js-6.png"
+      },
+      {
+        "title": "Truthy x Falsy",
+        "content": [
+          "-Truthy adalah sebuah nilai yang akan dianggap benar apabila dikomparasikan dalam pernyataan Boolean",
+          "-Falsy artinya kebalikan dari truthy, nilai yang akan dianggap salah bila dikomparasikan dalam pernyataan Boolean"
+        ]
+      },
+      {
+        "title": "Truthy x Falsy(ii)",
+        "content": [""],
+        "image": "/assets/image/alur-logika/image-js-7.png"
+      },
+      {
+        "title": "Truthy x Falsy(iii)",
+        "content": [
+          "-if (Infinity) - truthy",
+          "-if (Infinity === -Infinity) - falsy",
+          "-if (0.5 + 0.1 === 0.6) - truthy",
+          "if (0.1 + 0.2 === 0.3) - falsy",
+          "if (0 == '0') - truthy"
+        ]
+      },
+      {
+        "title": "Iterasi dan Perulangan",
+        "content": ["Misalnya kita punya kode yang seperti ini"],
+        "image": "/assets/image/alur-logika/image-js-8.png"
+      },
+      {
+        "title": "Iterasi dan Perulangan(ii)",
+        "content": [
+          "-Apa yang terjadi bila data dalam array ada 100?",
+          "-Tangan kita akan keriting bukan menulisnya?"
+        ]
+      },
+      {
+        "title": "Iterasi dan Perulangan (iii)",
+        "content": [
+          "-Perulangan memberikan cara cepat dan mudah untuk melakukan sesuatu yang berpola berulang-ulang",
+          "-Dalam javascript ada beberapa cara untuk menuliskan iterasi dan perulangan ini:",
+          "*Perulangan for ...",
+          "*Perulangan while ...",
+          "*Perulangan break",
+          "-Selalu berhati hati menuliskan perulangan agar tidak terjadi Infinite Loop"
+        ]
+      },
+      {
+        "title": "Perulangan for ...",
+        "content": [
+          "-Cara penulisan perulangan yang paling umum digunakan",
+          "-Akan berulang terus sampai kondisi yang diberikan menjadi false"
+        ]
+      },
+      {
+        "title": "Perulangan for ... (ii)",
+        "content": ["Notasi penulisan for ..."],
+        "image": "/assets/image/alur-logika/image-js-9.png"
+      },
+      {
+        "title": "Perulangan for ... (iii)",
+        "content": ["Contoh penulisan for ..."],
+        "image": "/assets/image/alur-logika/image-js-10.png"
+      },
+      {
+        "title": "Perulangan while ...",
+        "content": [
+          "-Cara penulisan perulangan yang cukup umum digunakan",
+          "-Perulangan yang akan terus dilakukan selama kondisi yang diberikan masih true"
+        ]
+      },
+      {
+        "title": "Perulangan while(ii)",
+        "content": ["-Notasi perulangan while ..."],
+        "image": "/assets/image/alur-logika/image-js-11.png"
+      },
+      {
+        "title": "Perulangan while(iii)",
+        "content": ["-contohperulangan while ..."],
+        "image": "/assets/image/alur-logika/image-js-12.png"
+      },
+      {
+        "title": "Perulangan break",
+        "content": [
+          "-Baik perulangan for ... maupun while ... bisa dihentikan di tengah-tengah",
+          "-Bisa menggunakan break maupun continue",
+          "-Yang diajarkan di sini adalah break saja",
+          "-Cara menghentikan perulangan dengan menuliskan break; saja"
+        ]
+      },
+      {
+        "title": "Perulangan break (ii)",
+        "content": ["Contoh penggunaan break"],
+        "image": "/assets/image/alur-logika/image-js-13.png"
+      },
+      {
+        "title": "FINISH",
+        "content": ["QnA"]
       }
     ],
     "schedule": [
