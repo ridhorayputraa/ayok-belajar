@@ -1058,7 +1058,165 @@
     "slides": [
       {
         "title": "JavaScript - Fungsi",
-        "content": ["Sabar duluk"]
+        "content": [""]
+      },
+      {
+        "title": "JavaScript - Fungsi",
+        "content": [
+          "-Intro Fungsi",
+          "-Cara Penulisan Fungsi",
+          "-Tantangan",
+          "QNA"
+        ]
+      },
+      {
+        "title": "JavaScript - Fungsi",
+        "content": ["-Mari kita lihat cuplikan kode berikut"],
+        "image": "/assets/image/js-fungsi/img-js-1.png"
+      },
+      {
+        "title": "JavaScript - Fungsi",
+        "content": [
+          "-Bayangkan bila kita memiliki 100 array yang harus ditulis",
+          "-Perulangan yang harus kita tulis membuat tangan keriting bukan?"
+        ]
+      },
+      {
+        "title": "Intro Fungsi (ii)",
+        "content": [
+          "-Lalu solusinya bagaimana?",
+          "-Salah satunya adalah dengan menggunakan fungsi (Function)"
+        ]
+      },
+      {
+        "title": "Intro Fungsi (iii)",
+        "content": [
+          "Fungsi adalah suatu cara untuk menuliskan kode yang bisa dipakai berulang-ulang sehingga membuat kode kita menjadi lebih DRY"
+        ]
+      },
+      {
+        "title": "DRY (Don't Repeat Yourself)",
+        "content": [
+          "-Prinsip dalam pemrograman yang bertujuan untuk mengurangi perulangan dari pola penulisan kode",
+          "-Biasanya menggunakan suatu abstraksi atau normalisasi data",
+          "-Diformulasikan oleh Andy Hunt dan Dave Thomas",
+          "-Abstraksi yang akan dipelajari sekarang ini bernama Fungsi (Function)"
+        ]
+      },
+      {
+        "title": "Cara Penulisan Fungsi",
+        "content": [
+          "-Deklarasi Fungsi",
+          "-Fungsi sebagai Ekspresi",
+          "-Parameter dan Argumen",
+          "-Arrow Function",
+          "-IIFE"
+        ]
+      },
+      {
+        "title": "Deklarasi Fungsi",
+        "content": [
+          "-Fungsi dapat dideklarasikan dengan menggunakan keyword function"
+        ],
+        "image": "/assets/image/js-fungsi/img-js-2.png"
+      },
+      {
+        "title": "Deklarasi Fungsi (ii)",
+        "content": ["-Contoh Deklarasi Fungsi"],
+        "image": "/assets/image/js-fungsi/img-js-3.png"
+      },
+      {
+        "title": "Fungsi sebagai Ekspresi",
+        "content": [
+          "-Dalam js, fungsi adalah sebuah Object",
+          "-Karena itu kita bisa memasukkannya ke dalam sebuah variabel"
+        ]
+      },
+      {
+        "title": "Fungsi sebagai Ekspresi (ii)",
+        "content": ["-Notasi penulisan fungsi sebagai ekspresi"],
+        "image": "/assets/image/js-fungsi/img-js-4.png"
+      },
+      {
+        "title": "Fungsi sebagai Ekspresi (iii)",
+        "content": ["-Contoh Fungsi sebagai eskpresi"],
+        "image": "/assets/image/js-fungsi/img-js-5.png"
+      },
+      {
+        "title": "Parameter dan Argumen",
+        "content": [
+          "-Loh, katanya fungsi itu demi DRY bukan?",
+          "-Kita ambil contoh sebelumnya:",
+          "-Bagaimana bila ternyata kita ingin mengubah angkanya?",
+          "-Apakah kita harus membuat fungsi baru lagi?",
+          "-Tydak!, kita bisa memanfaatkan parameter dan argumen."
+        ]
+      },
+      {
+        "title": "Parameter dan Argumen (ii)",
+        "content": [
+          "Parameter adalah nama variabel yang dilempar ke dalam suatu fungsi, sedangkan Argumen adalah nilai asli yang dimasukkan ke dalam fungsi"
+        ]
+      },
+      {
+        "title": "Parameter dan Argumen (iii)",
+        "content": ["-Notasi Parameter dan Argumen"],
+        "image": "/assets/image/js-fungsi/img-js-6.png"
+      },
+      {
+        "title": "Parameter dan Argumen (iv)",
+        "content": ["Contoh Parameter dan Argumen"],
+        "image": "/assets/image/js-fungsi/img-js-7.png"
+      },
+      {
+        "title": "Arrow Function",
+        "content": [
+          "-Diperkenalkan pada ES6",
+          "-Cara penulisan fungsi yang lebih singkat dan 'modern'"
+        ]
+      },
+      {
+        "title": "Arrow Function(ii)",
+        "content": ["Notasi arrow function"],
+        "image": "/assets/image/js-fungsi/img-js-8.png"
+      },
+      {
+        "title": "Arrow Function(iii)",
+        "content": ["Notasi arrow function"],
+        "image": "/assets/image/js-fungsi/img-js-9.png"
+      },
+      {
+        "title": "IIFE",
+        "content": [
+          "-Immediately Invoked Function Expression",
+          "-Cara menulis fungsi yang akan langsung dijalankan",
+          "-Umumnya fungsi anonim yang langsung dibuat dan dijalankan",
+          "-Bisa menggunakan deklarasi fungsi biasa ataupun arrow function"
+        ]
+      },
+      {
+        "title": "IIFE (ii)",
+        "content": ["Notasi IIFE"],
+        "image": "/assets/image/js-fungsi/img-js-10.png"
+      },
+      {
+        "title": "IIFE (iii)",
+        "content": ["Contoh IIFE"],
+        "image": "/assets/image/js-fungsi/img-js-11.png"
+      },
+      {
+        "title": "IIFE (iv)",
+        "content": [
+          "-Apa sih kegunaan dari IIFE?",
+          "-Untuk menghindari polusi variabel global",
+          "-Dipelajari Nanti Mengeksekusi fungsi async"
+        ]
+      },
+      {
+        "title": "FINISH",
+        "content": [
+          "QNA"
+        ]
       }
     ],
     "schedule": [
