@@ -1227,23 +1227,6 @@
       }
     ]
   },
-  "javascript-fungsi-algo": {
-    "title": "JavaScript - Fungsi Algo",
-    "subjectUri": "javascript-fungsi-algo",
-    "slides": [
-      {
-        "title": "JavaScript - Fungsi Algo",
-        "content": ["Sabar duluk"]
-      }
-    ],
-    "schedule": [
-      {
-        "day": "Senin",
-        "date": "17-11-2024",
-        "time": "13:30 - 15:00"
-      }
-    ]
-  },
   "javascript-callback": {
     "title": "JavaScript - Callback",
     "subjectUri": "javascript-callback",
@@ -1257,23 +1240,6 @@
       {
         "day": "Sabtu",
         "date": "23-11-2024",
-        "time": "13:30 - 15:00"
-      }
-    ]
-  },
-  "javascript-callback-algo": {
-    "title": "JavaScript - Callback Algo",
-    "subjectUri": "javascript-callback-algo",
-    "slides": [
-      {
-        "title": "JavaScript - Callback Algo",
-        "content": ["Sabar duluk"]
-      }
-    ],
-    "schedule": [
-      {
-        "day": "Minggu",
-        "date": "24-11-2024",
         "time": "13:30 - 15:00"
       }
     ]

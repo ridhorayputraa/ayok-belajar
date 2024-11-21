@@ -48,21 +48,9 @@
     "icon": "javascript"
   },
   {
-    "id": 8,
-    "subject": "javascript-fungsi-algo",
-    "title": "JavaScript - Fungsi Algo",
-    "icon": "javascript"
-  },
-  {
     "id": 9,
     "subject": "javascript-callback",
     "title": "JavaScript - Callback",
-    "icon": "javascript"
-  },
-  {
-    "id": 10,
-    "subject": "javascript-callback-algo",
-    "title": "JavaScript - Callback Algo",
     "icon": "javascript"
   },
   {
