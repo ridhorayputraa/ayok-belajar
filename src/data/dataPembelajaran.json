@@ -1214,9 +1214,7 @@
       },
       {
         "title": "FINISH",
-        "content": [
-          "QNA"
-        ]
+        "content": ["QNA"]
       }
     ],
     "schedule": [
@@ -1233,7 +1231,196 @@
     "slides": [
       {
         "title": "JavaScript - Callback",
-        "content": ["Sabar duluk"]
+        "content": [""]
+      },
+      {
+        "title": "Agenda",
+        "content": [
+          "-Closures",
+          "-Fungsi sebagai First Class Object",
+          "-Intro Callback",
+          "-Nested Callback"
+        ]
+      },
+      {
+        "title": "Closures",
+        "content": ["Fungsi di dalam fungsi"],
+        "image": "/assets/image/js-callback/img-js-1.png"
+      },
+      {
+        "title": "Kok bisa?",
+        "content": [
+          "Sebuah fungsi di dalam javascript bisa mengembalikan sebuah fungsi lainnya?"
+        ]
+      },
+      {
+        "title": "Fungsi sebagai First Class Object",
+        "content": [
+          "-Dalam javascript, fungsi adalah first class object, atau objek 'kasta atas', artinya:",
+          "-Fungsi bisa dimasukkan ke dalam variabel, object, ataupun array",
+          "-Fungsi bisa dikembalikan (return) oleh fungsi lainnya",
+          "-Fungsi bisa dijadikan sebuah argumen dalam fungsi lainnya"
+        ]
+      },
+      {
+        "title": "Intro Callback",
+        "content": [
+          "-Proses Synchronous dan Asynchronous",
+          "-Apa itu Callback",
+          "-Mari buat Callback"
+        ]
+      },
+      {
+        "title": "Proses Synchronous dan Asynchronous",
+        "content": [
+          "Dalam dunia pemrograman, ada 2 cara proses:",
+          "-Synchronous (sync)",
+          "-Asynchronous (async)"
+        ]
+      },
+      {
+        "title": "Proses Sync dan Async",
+        "content": [
+          "-Sync = eksekusi program yang akan menunggu proses sebelumnya selesai, sebelum prosesnya dijalankan (blocking)",
+          "-Async = eksekusi program yang dapat berjalan tanpa menunggu proses sebelumnya selesai (non-blocking)"
+        ]
+      },
+      {
+        "title": "Proses Sync dan Async - Analogi",
+        "content": [
+          "Analoginya adalah order makanan: Drive-through vs Order restoran",
+          "-Drive-through = dilayani secara berurutan (sequential), selama depan belum selesai, belakang akan menunggu",
+          "-Order restoran = dapur akan buat beberapa bersamaan, tidak menunggu bahkan kadang bisa diserobot urutannya"
+        ]
+      },
+      {
+        "title": "Proses Sync dan Async - Contoh",
+        "content": ["Apakah outputnya?"],
+        "image": "/assets/image/js-callback/img-js-2.png"
+      },
+      {
+        "title": "Fungsi sebagai First Class Object (Revisited)",
+        "content": [
+          "-Dalam javascript, fungsi adalah first class object, atau objek 'kasta atas', artinya:",
+          "-Fungsi bisa dimasukkan ke dalam variabel, object, ataupun array",
+          "-Fungsi bisa dikembalikan (return) oleh fungsi lainnya",
+          "-Fungsi bisa dijadikan sebuah argumen dalam fungsi lainnya"
+        ]
+      },
+      {
+        "title": "Apa itu Callback",
+        "content": [
+          "Sebuah fungsi yang dijadikan sebuah argumen pada fungsi lainnya"
+        ]
+      },
+      {
+        "title": "Contoh Callback",
+        "content": [
+          "Misalnya saya punya beberapa pekerjaan yang harus dilakukan:",
+          "-Menelpon pasangan karena bucin",
+          "-Mengerjakan tugas tantangan",
+          "-Cuci baju"
+        ]
+      },
+      {
+        "title": "Contoh Callback (ii)",
+        "content": [
+          "Kita coba lihat urutan kerjaannya:",
+          "-Pada saat menelpon pasangan, ternyata adiknya yang angkat dan mengatakan bahwa si dia sedang mandi, dan saya diminta menunggu (hold) telepon",
+          "-Saya tidak mau, dan titip pesan ke adiknya, kalau si dia udah kelar mandi, tolong kabari si dia untuk telepon ke saya yah"
+        ]
+      },
+      {
+        "title": "Contoh Callback (iii)",
+        "content": [
+          "-Sembari menunggu si dia menelpon balik, saya bisa mengerjakan tantangan atau cuci baju dulu",
+          "-Ketika si dia selesai mandi dan menelepon, saya akan stop kerjaan saya sekarang, dan melepas rindu dengan si dia",
+          "-Ini adalah salah satu contoh callback di dunia nyata"
+        ]
+      },
+      {
+        "title": "Contoh Callback (iv)",
+        "content": [
+          "Sedikit Catatan",
+          "-Saya ini orangnya hanya bisa mengerjakan satu pekerjaan dalam satu waktu (single threaded)",
+          "-Saya tidak bisa Kage bunshin no jutsu atau membelah diri untuk mengerjakan banyak hal dalam satu waktu",
+          "-Tapi selagi menunggu pekerjaan yang lain selesai, saya bisa mengerjakan pekerjaan lainnya (async / non-blocking)"
+        ]
+      },
+      {
+        "title": "Kembali ke kode",
+        "content": [
+          "Di kode ini, fungsiKesatu akan dijalankan duluan sebelum fungsiKedua"
+        ],
+        "image": "/assets/image/js-callback/img-js-3.png"
+      },
+      {
+        "title": "Kembali ke kode (ii)",
+        "content": [
+          "Mari kita pikirkan suatu hal",
+          "-Apa yang akan terjadi bila si fungsiKesatu memiliki kode yang tidak bisa dijalankan dengan cepat?",
+          "-Misalnya seperti:",
+          "-membaca file yang jumlahnya sangat besar?",
+          "-menunggu data dari tempat lain (api request)?",
+          "-Mari kita coba simulasikan dengan setTimeout (fungsi bawaan javascript)"
+        ]
+      },
+      {
+        "title": "Kembali ke kode (iii)",
+        "content": ["Mari coba kita lihat outputnya !"],
+        "image": "/assets/image/js-callback/img-js-4.png"
+      },
+      {
+        "title": "Kok bisa?",
+        "content": [
+          "-Pada kode, sebenarnya si fungsiKesatu berjalan duluan, hanya saja, tidak ditungguin sampai selesai, namun langsung ke fungsiKedua dulu",
+          "-FungsiKesatu jalan (duluan) namun tidak ditunggu, kemudian fungsiKedua jalan (cetak 'dua') dan setelah fungsiKesatu selesai, dipanggil kembali dan cetak 'satu'"
+        ]
+      },
+      {
+        "title": "Bagaimana seandainya...",
+        "content": [
+          "-fungsiKesatu adalah proses yang tidak diketahui kapan selesainya",
+          "-fungsiKedua adalah proses yang sequential seperti biasanya",
+          "-Kita menginginkan: setelah fungsiKesatu selesai, baru boleh memanggil fungsiKedua?",
+          "-Ya ! (salah satu) solusinya adalah dengan menggunakan callback !"
+        ]
+      },
+      {
+        "title": "Mari buat Callback (ii)",
+        "content": [
+          "Misalnya kita ingin membuat sebuah fungsi yang menerima array of number yang bisa melakukan pencarian angka ganjil saja"
+        ]
+      },
+      {
+        "title": "Mari buat Callback (iii)",
+        "content": [""],
+        "image": "/assets/image/js-callback/img-js-5.png"
+      },
+      {
+        "title": "Mari buat Callback (iv)",
+        "content": [
+          "Sekarang kita ingin membuat fungsi pemilahAngka bisa melakukan pemilahan berdasarkan fungsi yang diberikan (callback)"
+        ]
+      },
+      {
+        "title": "Mari buat Callback (v)",
+        "content": ["Sekarang mari kita melihat kode dengan callbacknya"],
+        "url": "https://github.com/ridhorayputraa/ngajar/blob/master/9.)%20js-callback/callback1.js"
+      },
+      {
+        "title": "Mari buat Callback (vi)",
+        "content": ["Mari kita menyelesaikan kasus awal kita tadi !"],
+        "image": "/assets/image/js-callback/img-js-6.png"
+      },
+      {
+        "title": "Nested Callback",
+        "content": ["Mirip dengan Looping, Callback juga bisa di-nestedkan"],
+        "url": "https://github.com/ridhorayputraa/ngajar/blob/master/9.)%20js-callback/callback2.js"
+      },
+      {
+        "title": "FINISH",
+        "content": ["QNA"]
       }
     ],
     "schedule": [
