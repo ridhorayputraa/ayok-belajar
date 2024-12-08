@@ -1454,7 +1454,177 @@
     "slides": [
       {
         "title": "Pengenalan ReactJs",
-        "content": ["Sabar duluk"]
+        "content": [""]
+      },
+      {
+        "title": "Agenda",
+        "content": [
+          "Apa saja yang akan dibahas?",
+          "-Apa itu React",
+          "-Inisialisasi React",
+          "-Core Concept React",
+          "-QnA"
+        ]
+      },
+      {
+        "title": "Apa itu React",
+        "content": [
+          "Sebelum kita masuk ke React...",
+          "Ada baiknya kita mengetahui hal ini terlebih dahulu...",
+          "Apakah itu Pemrograman secara Imperatif vs Deklaratif"
+        ]
+      },
+      {
+        "title": "Imperatif",
+        "content": [
+          "Mari kita analogikan: Pesan Pizza",
+          "1.) Telepon Koki Pizza",
+          "2.) Memberikan urutan membuat Pizza ke Kokinya secara Detail",
+          "3.) Meminta Koki untuk membungkus Pizza dan memberikan ke Teller",
+          "4.) Meminta Teller untuk memberikan ke delivery dan mengarahkan delivery sampai dengan tujuan",
+          "5.) Menerima Pizza dan bayar"
+        ]
+      },
+      {
+        "title": "Deklaratif",
+        "content": [
+          "Mari kita analogikan: Pesan Pizza",
+          "1.) Telpon Penjual Pizza, kasih Alamat",
+          "2.) Duduk manis, menunggu, pizza tiba tiba sampai, bayar"
+        ]
+      },
+      {
+        "title": "Jadi React itu adalah...",
+        "content": [
+          "Sebuah Pustaka (Library) UI yang Deklaratif (ingat yah, BUKAN Framework)",
+          "Kita bisa memberitahukan apa yang kita inginkan dari sisi UI ke React, dan React akan mikirin harus gimana untuk meng-update DOM-nya"
+        ]
+      },
+      {
+        "title": "Sejarah React",
+        "content": [""],
+        "image": "/assets/image/react/react-1.png"
+      },
+      {
+        "title": "React Sangat Populer",
+        "content": [
+          "Perusahaan pengguna React",
+          "-AirBNB",
+          "-Netflix",
+          "-Facebook",
+          "-Instagram",
+          "-Whatsapp",
+          "-Paypal"
+        ]
+      },
+      {
+        "title": "Inisialisasi React",
+        "content": [
+          "Mari kita paste perintah berikut ke terminal ya !",
+          "npm create vite@latest"
+        ]
+      },
+      {
+        "title": "Struktur Folder React Project",
+        "content": [
+          "Tempat menaruh dependency (package) eksternal dari project kita",
+          "Ketika kita mengetik npm install maka package tersebut akan didownload dan diletakkan di sini"
+        ],
+        "image": "/assets/image/react/react-2.jpg"
+      },
+      {
+        "title": "Struktur Folder React Project(ii)",
+        "content": [
+          "public",
+          "Tempat menaruh file yang statik (index.html, pustaka javascript, gambar, dan aset lainnya)",
+          "File yang diletakkan pada folder ini TIDAK AKAN diproses oleh Webpack",
+          "(Webpack merupakan tools bundler dari project berbasis CRA)",
+          "(bundler adalah tools untuk membuat kode kita menjadi lebih terstruktur dan kecil ketika dijalankan di production)"
+        ]
+      },
+      {
+        "title": "Struktur Folder React Project(iii)",
+        "content": [
+          "src",
+          "Tempat menaruh file yang akan diproses oleh webpack",
+          "mis: App.jsx / App.js yang memiliki file JSX harus diproses oleh webpack supaya bisa menjadi JavaScript biasa (istilahnya di-Transpile)",
+          "App.js merupakan file komponen utama, dan index.js merupakan gerbang utama (entry point) untuk menjembatani html dengan aplikasi React yang dibuat"
+        ]
+      },
+      {
+        "title": "Struktur Folder React Project(iv)",
+        "content": [
+          "package.json & package_lock.json",
+          "Berisi listing dari package / dependency yang dipasang pada node_modules",
+          "Selain listing, berisi juga metadata dari project yang sedang dibuat",
+          "package_lock.json berisi kunci untuk memastikan package yang akan didownload nantinya adalah sama dengan yang diinginkan"
+        ]
+      },
+      {
+        "title": "Yuk jalanin Aplikasi Reactnya",
+        "content": ["npm run start"]
+      },
+      {
+        "title": "Core Concept React",
+        "content": [
+          "Konsep Utama dalam React:",
+          "JSX",
+          "Komponen",
+          "Props",
+          "Render Kondisional (Conditional Rendering)",
+          "State (Sneak Peek)"
+        ]
+      },
+      {
+        "title": "JSX",
+        "content": ["Pada JSX, kita akan menuliskan HTML di dalam JS !"]
+      },
+      {
+        "title": "JSX (ii)",
+        "content": [
+          "JSX (JavaSCript XML) membolehkan kita untuk menuliskan kode yang mirip XML untuk kepentingan simplisitas dan elegan, kemudian akan dikonversi (transpile) menjadi fungsi JS",
+          "Terlihat seperti gabungan dari JavaScript dan HTML"
+        ]
+      },
+      {
+        "title": "Komponen",
+        "content": [
+          "Anggap saja Komponen itu adalah seperti blok LEGO, yang bisa digabungkan untuk membuat suatu struktur bangunan",
+          "Modularitas seperti ini memperbolehkan kita untuk menambahkan, mengganti, ataupun menghancurkan komponen tanpa perlu menyentuh aplikasi / komponen lainnya",
+          "Mari kita ngoding"
+        ]
+      },
+      {
+        "title": "Props",
+        "content": [
+          "kita bisa men-transfer data sebagai property ke dalam sebuah Komponen React",
+          "Hal ini disebut dengan props",
+          "Mari kita ngoding"
+        ]
+      },
+      {
+        "title": "Extra: Conditional Rendering",
+        "content": [
+          "Bagaimana bila sekarang kita ingin menggunakan props, tapi ingin memiliki default value (nilai default bila props tidak digunakan)?",
+          "Salah satu solusinya adalah dengan menggunakan conditional rendering ini.",
+          "Kunci utamanya adalah dengan menggunakan ternary operator",
+          "kondisi ? exprJikaBenar : exprJikaSalah",
+          "Mari kita ngoding"
+        ]
+      },
+      {
+        "title": "State",
+        "content": ["Gambaran state"],
+        "image": "/assets/image/react/react-3.png"
+      },
+      {
+        "title": "State(ii)",
+        "content": [
+          "Dalam React, state adalah objek bawaan yang menyimpan data dan informasi tentang komponen",
+          "State bersifat privat dan sepenuhnya dikendalikan oleh komponen. ",
+          "State memungkinkan komponen untuk mengingat data dan merendernya sebagaimana mestinya. ",
+          "Mari kita ngoding"
+        ]
       }
     ],
     "schedule": [
