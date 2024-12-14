@@ -1641,7 +1641,196 @@
     "slides": [
       {
         "title": "React Js - Component UI Famework",
-        "content": ["Sabar duluk"]
+        "content": [""]
+      },
+      {
+        "title": "Agenda",
+        "content": [
+          "Apa saja yang akan dibahas?",
+          "-Review React",
+          "-Event Handler",
+          "State",
+          "QnA"
+        ]
+      },
+      {
+        "title": "Review React",
+        "content": [
+          "Mari kita nyoba bikin proyek React kembali yah !",
+          "Kita akan coba untuk membuat aplikasi ToDoList dengan React.",
+          "-Buka docs Vite React",
+          "-Selanjutnya kita akan membuat Component ToDo List Sederhana terlebih dahulu",
+          "-Buat dua file dengan nama",
+          "*src/components/ToDoForm.jsx dan",
+          "*src/components/ToDoList.jsx",
+          "-Buka file index.js, comment bagian import index.css",
+          "-Buka file App.js, comment bagian import logo dan import css",
+          "-Selanjutnya kita akan menuliskan kode untuk ToDoForm.jsx terlebih dahulu yah"
+        ]
+      },
+      {
+        "title": "Review React (ii)",
+        "content": ["Kode ToDoForm.jsx"],
+        "image": "/assets/image/react-component/react-1.png"
+      },
+      {
+        "title": "Review React (iii)",
+        "content": ["Kode ToDoList.jsx"],
+        "image": "/assets/image/react-component/react-2.png"
+      },
+      {
+        "title": "Review React (iv)",
+        "content": ["Kode App.js"],
+        "image": "/assets/image/react-component/react-3.png"
+      },
+      {
+        "title": "Review React (v)",
+        "content": [
+          "Untuk kode proyek ToDo tadi dapat dilihat di bawah yah.",
+          "Nah masih ada yang terasa aneh dengan ToDo yang baru dibuat kan?",
+          "Aplikasinya masih belum bisa baca data yang dikirimkan oleh user !",
+          "Untuk bisa menyelesaikan ini, kita harus mengerti terlebih dahulu apa itu State dan Event Handler di React ini yah !"
+        ],
+        "url": "https://github.com/ridhorayputraa/react-component/tree/Todo1"
+      },
+      {
+        "title": "Event Handler",
+        "content": [
+          "Contoh Event Handler",
+          "-Bila ada sebuah button maka bisa memiliki event click",
+          "-bila ada sebuah form maka bisa memiliki event submit",
+          "-bila ada sebuah input maka bisa memiliki event change",
+          "-bila ada sebuah select option maka juga bisa memiliki event change",
+          "Pertanyaan sekarang: bagaimana cara menggunakannya pada React?",
+          "Mari kita kembali ke proyek ToDo yang dibuat tadi"
+        ]
+      },
+      {
+        "title": "Event Handler(ii)",
+        "content": ["Demo", "Buat file src/components/ToDoIncrement.jsx"],
+        "image": "/assets/image/react-component/react-4.png"
+      },
+      {
+        "title": "Event Handler(iii)",
+        "content": ["Modifikasi file App.js"],
+        "image": "/assets/image/react-component/react-5.png"
+      },
+      {
+        "title": "Event Handler(iv)",
+        "content": ["Modifikasi file ToDoIncrement.jsx"],
+        "image": "/assets/image/react-component/react-6.png"
+      },
+      {
+        "title": "Event Handler(v)",
+        "content": [
+          "Untuk kode proyek dapat dilihat di bawah yah.",
+          "Mari kita coba analisis kode yang dibuat tadi:",
+          "-Untuk dapat menggunakan event handler, kita membutuhkan sebuah fungsi yang digunakan untuk ditempelkan pada event handler",
+          "-Untuk menempelkan fungsi, pada attribut yang menginginkan ada Event Handler, dapat menggunakan on<NamaEvent>, mis: onClick, onSubmit, dsb",
+          "-Kita masih gagal untuk membuat data yang reaktif terhadap perubahan yang ada. Hal ini terjadi karena kita belum memahami dan menggunakan State"
+        ],
+        "url": "https://github.com/ridhorayputraa/react-component/tree/Todo2"
+      },
+      {
+        "title": "State",
+        "content": [
+          "Dalam kasus Proyek ToDo yang dibuat sebelumnya, kita memiliki sebuah data dengan nama increment yang tidak reaktif (tidak berubah sesuai perubahan yang ada).",
+          "Untuk itu kita harus mengetahui bagaimana cara menggunakan State terlebih dahulu agar bisa berbagi data",
+          "State adalah suatu Object bawaan di dalam React yang digunakan untuk menampung data atau informasi dari suatu Komponen.",
+          "State dari suatu komponen bisa berubah kapanpun, dan ketika hal itu terjadi, maka komponen akan di-render ulang.",
+          "Berbeda dengan Props, yang digunakan untuk passing data ke komponen anak (children components), State digunakan untuk menyimpan data dari komponen yang nantinya harus dirender ke dalam tampilan yang ada."
+        ]
+      },
+      {
+        "title": "State(ii)",
+        "content": [
+          "Yuk sudah cukup ngomongin teorinya !",
+          "Mari sekarang kita belajar cara menuliskan State",
+          "Yuk kita lanjutkan untuk ToDoIncrement yang masih error yah !",
+          "Tenang, untuk proyek ToDo Listing tadi akan dibahas setelah ini yah !"
+        ]
+      },
+      {
+        "title": "State - Demo",
+        "content": ["Mari kita modifikasi lagi file ToDoIncrement.jsx"],
+        "image": "/assets/image/react-component/react-7.png"
+      },
+      {
+        "title": "State - Demo(ii)",
+        "content": [
+          "Untuk Kode final yang dibuat sebelumnya dapat dilihat di bwah yah",
+          "Perlu diingat bahwa walaupun state mutable, selalu perlakukan state seperti immutable ! (jangan lakukan reassign, tapi gunakan method setter / replacernya) !",
+          "Nah sekarang setelah mengetahui Event Handler dan State mari sekarang kita menyelesaikan ToDo List ini yah !"
+        ],
+        "url": "https://github.com/ridhorayputraa/react-component/tree/Todo3"
+      },
+      {
+        "title": "Combination",
+        "content": [
+          "Sekarang kita akan menggabungkan yang sudah dipelajari pada minggu kemarin Props dengan materi yang baru dipelajari Event Handler dan State",
+          "Pertama, kita harus mengetahui karena data todos ini akan digunakan oleh dua Komponen anak, maka kita harus menaruh State nya di Komponen Orang tuanya (Parent Component). hal ini umum disebut dengan istilah Lifting up the state",
+          "Jadi mari buka kembali file App.js dan deklarasi state todos di App.js"
+        ]
+      },
+      {
+        "title": "Combination(ii)",
+        "content": [
+          "Deklarasi state todos di App.js",
+          "Selanjutnya kita akan mendeklarasikan fungsi untuk menambah todos dan mendeklarasikan props pada Komponen anak di App.js"
+        ],
+        "image": "/assets/image/react-component/react-8.png"
+      },
+      {
+        "title": "Combination(iii)",
+        "content": [
+          "Deklarasi fungsi untuk menambah todos dan deklarasi Props di App.js",
+          "Selanjutnya kita akan memodifikasi kode pada komponen ToDoList untuk bisa membaca data dari state yang sudah dibuat di App.js"
+        ],
+        "image": "/assets/image/react-component/react-9.png"
+      },
+      {
+        "title": "Combination(iv)",
+        "content": [
+          "Memodifikasi kode pada komponen ToDoList (file ToDoList.jsx)",
+          "Selanjutnya, adalah bagian paling panjang dan terakhir, yaitu memodifikasi komponen ToDoForm"
+        ],
+        "image": "/assets/image/react-component/react-10.png"
+      },
+      {
+        "title": "Combination(v)",
+        "content": [
+          "Memodifikasi kode pada komponen ToDoForm (file ToDoForm.jsx)"
+        ],
+        "image": "/assets/image/react-component/react-11.png"
+      },
+      {
+        "title": "Combination(vi)",
+        "content": [
+          "Memodifikasi kode pada komponen ToDoForm (file ToDoForm.jsx)",
+          "S-E-L-E-S-A-I ! sampai pada tahap ini Proyek ToDoList kita sudah selesai !"
+        ],
+        "image": "/assets/image/react-component/react-12.png"
+      },
+      {
+        "title": "Combination - Recap",
+        "content": [
+          "Cukup panjang yah kodenya ! selamat datang ke dunia React !",
+          "Sampai di sini artinya kita sudah mempelajari:",
+          "-Pembuatan Component",
+          "-Penggunaan Props",
+          "-Penggunaan Event Handler",
+          "-Penggunaan State",
+          "Selanjutnya kita harus memantapkan dari materi yang didapatkan lagi yah !"
+        ],
+        "url": "https://github.com/ridhorayputraa/react-component/tree/TodoFinal"
+      },
+      {
+        "title": "QnA",
+        "content": [""]
+      },
+      {
+        "title": "Tugas",
+        "content": ["-Buatkan 1 inputan nama dan nama nya harus terupdate"]
       }
     ],
     "schedule": [
