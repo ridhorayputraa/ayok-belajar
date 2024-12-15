@@ -1847,7 +1847,191 @@
     "slides": [
       {
         "title": "React Js - Component UI Famework 2",
-        "content": ["Sabar duluk"]
+        "content": [""]
+      },
+      {
+        "title": "Agenda",
+        "content": [
+          "Apa saja yang akan dibahas?",
+          "-Review React",
+          "-UI Component Library",
+          "-QnA"
+        ]
+      },
+      {
+        "title": "Review React",
+        "content": [
+          "Yuk kita mengingat lagi tentang pembuatan ToDoList kemarin yah",
+          "Bagaimana bila seandainya sekarang kita ingin membuat ToDoList dalam bentuk sebuah tabel ?",
+          "Mari kita coba untuk membuatnya yah"
+        ]
+      },
+      {
+        "title": "Review React(ii)",
+        "content": [
+          "-Membuat projectnya kembali dengan menggunakan npx create-react-app nama-project-yang-diinginkan",
+          "-Memodifikasi file src/index.js dan meng-komen bagian import css",
+          "-Memodifikasi file src/App.js dan meng-komen seluruh import serta mengosongkan return dari function app (sehingga hanya tersisa div className=App) saja",
+          "-Membuat folder pada src dengan nama components",
+          "-Membuat dua buah file dengan nama ToDoForm.jsx dan ToDoTable.jsx pada folder src/components",
+          "-Membuat folder pada src dengan nama containers",
+          "-Membuat file ToDo.jsx pada folder src/containers",
+          "-Selanjutnya kita akan memulai untuk menuliskan kode, dimulai dari file ToDo.jsx"
+        ]
+      },
+      {
+        "title": "Review React(iii)",
+        "content": [
+          "File ToDo.jsx",
+          "Apabila saat di save keluar warning di linter, abaikan terlebih dahulu yah !",
+          "Selanjutnya kita akan memodifikasi file App.js untuk menampilkan containers ToDo"
+        ],
+        "image": "/assets/image/react-component-2/react-1.png"
+      },
+      {
+        "title": "Review React(iv)",
+        "content": [
+          "File App.jsx",
+          "Selanjutnya kita akan mulai untuk membuat component ToDoForm"
+        ],
+        "image": "/assets/image/react-component-2/react-2.png"
+      },
+      {
+        "title": "Review React(v)",
+        "content": ["File ToDoForm.jsx"],
+        "image": "/assets/image/react-component-2/react-3.png"
+      },
+      {
+        "title": "Review React(vi)",
+        "content": [
+          "Wah kode kita sudah mulai panjang yah !",
+          "Ya, memang seperti inilah bila sudah masuk ke React yah, harus menerima sikon yang seperti ini !",
+          "Selanjutnya kita akan mulai membuat component ToDoTable yah !"
+        ]
+      },
+      {
+        "title": "Review React(vii)",
+        "content": ["File ToDoTable.jsx"],
+        "image": "/assets/image/react-component-2/react-4.png"
+      },
+      {
+        "title": "Review React(viii)",
+        "content": [
+          "Selanjutnya kita akan modifikasi file ToDo.jsx kembali, untuk menambahkan ToDoForm dan ToDoTable",
+          "Sekarang kita akan membuat logic untuk menambahkan data todos ke dalam tabel apabila tombol Tambah kerjaan ditekan !"
+        ],
+        "image": "/assets/image/react-component-2/react-5.png"
+      },
+      {
+        "title": "Review React(ix)",
+        "content": [
+          "File ToDo.jsx",
+          "Selanjutnya kita akan modifikasi component ToDoForm"
+        ],
+        "image": "/assets/image/react-component-2/react-6.png"
+      },
+      {
+        "title": "Review React(x)",
+        "content": [
+          "File ToDoForm.jsx",
+          "Sampai di titik ini artinya kita sudah selesai untuk membuat penambahan data todos ke dalam tabel !",
+          "Selanjutnya kita akan membuat logic untuk menyelesaikan todos yang sudah dibuat !",
+          "Apabila tombol selesaikan dalam tiap baris data ditekan, maka akan membuat data isCompleted menjadi true",
+          "Mari kita mulai dari modifikasi container ToDo"
+        ],
+        "image": "/assets/image/react-component-2/react-7.png"
+      },
+      {
+        "title": "Review React(xi)",
+        "content": [
+          "File ToDo.jsx",
+          "Selanjutnya, modifikasi component ToDoTable untuk menyelesaikan todos yang sudah dibuat !"
+        ],
+        "image": "/assets/image/react-component-2/react-8.png"
+      },
+      {
+        "title": "Review React(xii)",
+        "content": [
+          "File ToDoTable.jsx",
+          "Sampai di sini artinya kita sudah menyelesaikan semuanya !"
+        ],
+        "image": "/assets/image/react-component-2/react-9.png"
+      },
+      {
+        "title": "Review React(xiii)",
+        "content": [
+          "Wah ternyata panjang yah !",
+          "Tenang... kalau sudah bekerja pastinya lebih panjang dari ini kok !",
+          "Tapi, ngomong-ngomong soal kerja, ini masih ada yang kurang loh...",
+          "Ya ! kita belum melakukan styling agar component kita menjadi lebih baik !",
+          "Untuk bisa melakukan styling terhadap component sebenarnya kita bisa saja melakukannya secara manual",
+          "Tapi bagaimana bila ternyata sudah ada yang mau berbaik hati membuatkan styling-nya, bahkan sampai sudah membuatkannya dalam bentuk Component-based ?",
+          "Yuk, tanpa bak bik buk, kita coba melihatnya !"
+        ]
+      },
+      {
+        "title": "UI Component Library",
+        "content": [
+          "UI Component Library umumnya adalah sekumpulan UI Component yang sudah siap digunakan untuk membuat sebuah aplikasi web.",
+          "Contoh Component, e.g.: Button, Input, Dialog, dsb",
+          "Dibuat sebagai library untuk membangun tampilan yang baik dan konsisten !",
+          "Contoh UI Component Library untuk React adalah:",
+          "-React Bootstrap",
+          "-Ant Design",
+          "-MUI (Material-UI)",
+          "-Dan masih banyak lainnya lagi...",
+          "Yang akan kita gunakan pada pembelajaran ini adalah MUI"
+        ]
+      },
+      {
+        "title": "UI Component Library(ii)",
+        "content": [
+          "MUI adalah UI Component Library yang didesain berdasarkan Material Design yang dibuat oleh Google.",
+          "Punya tampilan yang Google-alike, sehingga cukup cocok untuk tampilan mobile based (dan juga) secara visual akan cocok untuk tampilan desktop based.",
+          "Akan tetapi, bila nantinya tidak dicustom dengan baik, akan dikira sebagai aplikasi yang jadi produknya Google !",
+          "Yuk kita langsung buka MUI dan mulai belajar menggunakannya !",
+          "Tautan untuk penggunaan MUI bisa dibuka di bawah"
+        ],
+        "url": "https://mui.com/material-ui/getting-started/installation/"
+      },
+      {
+        "title": "UI Component Library(iii)",
+        "content": [
+          "Mari kita kembali lagi ke project ToDo yang kita buat tadi",
+          "Sekarang kita akan menambahkan UI Library MUI ke dalam project yang sudah kita buat",
+          "Untuk menambahkannya kita bisa menggunakan perintah yang ada di docs"
+        ]
+      },
+      {
+        "title": "UI Component Library(iv)",
+        "content": [
+          "Kita mulai dari file ToDoForm.jsx, dan menambahkan component Button MUI untuk menggantikan button standar yang kita buat sebelumnya",
+          "Perhatikan di sini ada attribute baru dengan nama variant dan size, ini merupakan attribute tambahan dari Button MUI."
+        ],
+        "image": "/assets/image/react-component-2/react-10.png"
+      },
+      {
+        "title": "UI Component Library(v)",
+        "content": ["File ToDoForm.jsx"],
+        "image": "/assets/image/react-component-2/react-11.png"
+      },
+      {
+        "title": "UI Component Library(vi)",
+        "content": ["File ToDo.jsx"],
+        "image": "/assets/image/react-component-2/react-12.png"
+      },
+      {
+        "title": "UI Component Library (vii)",
+        "content": [
+          "Wah panjang sekali yah kodenya?",
+          "Tenang, projekan biasanya lebih dari ini kok !",
+          "Bagi yang tertinggal mengikuti materi ini, atau males mau langsung liat akhirnya aja, bisa ngintip kode finalnya di bawah !"
+        ],
+        "url": "https://github.com/ridhorayputraa/react-component-2"
+      },
+      {
+        "title": "FINISH",
+        "content": ["QnA"]
       }
     ],
     "schedule": [
