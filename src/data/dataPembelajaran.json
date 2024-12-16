@@ -2112,8 +2112,7 @@
           "-Modifikasi file src/containers/ListMovies.jsx untuk menampilkan Component `CardMovie` yang kita buat sebelumnya",
           "-Sampai pada titik ini kita sudah berhasil menampilkan data JSON, tapi hanya satu saja... dan ada satu masalah lagi, yaitu gambarnya belum nampak loh ! Ya, ini karena data image tersebut kita ambil dari posisi yang salah. Untuk gambar sebenarnya ini diambil dari TMDB (yang akan dibahas nanti) yang semua imagenya harus ada prefix (awalan), yaitu https://image.tmdb.org/t/p/w200. Nah sekarang kita akan memodifikasi hal tersebut pada file CardMovie.jsx yah",
           "-Yak sampai di titik ini, seharusnya gambar sudah muncul, tapi hanya satu saja yang muncul. Bagaimana bila kita ingin menampilkan CardMovie yang berisi 3 data terakhir dari JSON yang kita miliki sekarang ini? Mari kita modifikasi file ListMovies.jsx.",
-          "-Voila ! Sampai di titik ini kita sudah berhasil melakukan pemetaan yang dinamis yah terhadap data yang kita miliki.",
-          "-Kode akhir dapat dilihat dibawah yah"
+          "-Voila ! Sampai di titik ini kita sudah berhasil melakukan pemetaan yang dinamis yah terhadap data yang kita miliki."
         ],
         "url": "https://github.com/ridhorayputraa/react-list-axios/tree/adding-list-component"
       },
