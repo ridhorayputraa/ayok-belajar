@@ -2048,7 +2048,19 @@
     "slides": [
       {
         "title": "React Js - Navigasi",
-        "content": ["Sabar duluk"]
+        "content": [""]
+      },
+      {
+        "title": "React Router",
+        "content": [
+          "Dikutip dari situsnya langsung, React Router adalah sebuah library lengkap pada server-side dan client-side untuk Routing / Navigasi pada React.",
+          "Yang akan kita pelajari di sini adalah React Router yang digunakan untuk React pada client-side (client-side routing) yah !",
+          "Yuk sekarang kita coba melihat cara menggunakan React Router !"
+        ]
+      },
+      {
+        "title": "React Router - Demo",
+        "content": ["Demo tonton videonya ya yang mengenai react router"]
       }
     ],
     "schedule": [
@@ -2065,7 +2077,225 @@
     "slides": [
       {
         "title": "React Js - List & Axios",
-        "content": ["Sabar duluk"]
+        "content": [""]
+      },
+      {
+        "title": "Agenda",
+        "content": ["-List", "-API", "-Axios", "-QnA"]
+      },
+      {
+        "title": "List",
+        "content": [
+          "Yuk sekarang kita coba untuk membuat Listing Movie yang cuakep",
+          "-Untuk awalnya sekarang ini kita akan menggunakan data dari file JSON terlebih dahulu yah",
+          "-Data JSON dapat diambil di Bawah yah"
+        ],
+        "url": "https://github.com/ridhorayputraa/react-list-axios/blob/master/src/data/movies.json"
+      },
+      {
+        "title": "List - Demo",
+        "content": [
+          "Langkah pembuatan list dalam demo ini adalah:",
+          "-Buat file src/data/movies.json",
+          "-Copy paste isi dari JSON yang diberikan di atas pada file movies.json",
+          "-Buat Card yang akan menampilkan gambar poster, judul film, rating, dan overview",
+          "-Buka dokumentasi yang ada pada MUI tentang card di sini",
+          "-Buat file src/containers/ListMovies.css, file ini akan berisi file CSS yang kita inginkan untuk membuat Listing dari Film yang ingin kita buat",
+          "-Buat file src/containers/ListMovies.jsx, file ini akan berisi Component ListMovies yang digunakan untuk menampilkan keseluruhan data yang kita inginkan",
+          "-Modifikasi file App.js untuk menampilkan Component ListMovies yang kita buat sebelumnya",
+          "-Buat file src/components/CardMovie.jsx, file ini akan berisi Component 'satuan' untuk setiap Movie yang akan dibaca dari ListMovies (Poster, Judul Film, dst ditampilkan di sini)"
+        ]
+      },
+      {
+        "title": "List - Demo (ii)",
+        "content": [
+          "-Modifikasi file src/containers/ListMovies.jsx untuk menampilkan Component `CardMovie` yang kita buat sebelumnya",
+          "-Sampai pada titik ini kita sudah berhasil menampilkan data JSON, tapi hanya satu saja... dan ada satu masalah lagi, yaitu gambarnya belum nampak loh ! Ya, ini karena data image tersebut kita ambil dari posisi yang salah. Untuk gambar sebenarnya ini diambil dari TMDB (yang akan dibahas nanti) yang semua imagenya harus ada prefix (awalan), yaitu https://image.tmdb.org/t/p/w200. Nah sekarang kita akan memodifikasi hal tersebut pada file CardMovie.jsx yah",
+          "-Yak sampai di titik ini, seharusnya gambar sudah muncul, tapi hanya satu saja yang muncul. Bagaimana bila kita ingin menampilkan CardMovie yang berisi 3 data terakhir dari JSON yang kita miliki sekarang ini? Mari kita modifikasi file ListMovies.jsx.",
+          "-Voila ! Sampai di titik ini kita sudah berhasil melakukan pemetaan yang dinamis yah terhadap data yang kita miliki.",
+          "-Kode akhir dapat dilihat dibawah yah"
+        ],
+        "url": "https://github.com/ridhorayputraa/react-list-axios/tree/adding-list-component"
+      },
+      {
+        "title": "List - Demo (iii)",
+        "content": [
+          "Secara singkatnya langkah yang dilakukan tadi adalah:",
+          "Ambil data JSON dengan cara",
+          "-import data from /path/to/data.json",
+          "Buat Component CardMovie yang akan menampung satuan data Movie",
+          "Map data JSON yang kita miliki ke dalam Component CardMovie",
+          "Passing data dari map tersebut ke dalam Component CardMovie via Props"
+        ]
+      },
+      {
+        "title": "List - Conclusion",
+        "content": [
+          "Nah sampai di sini kita sudah berhasil membuat Listing Movie berdasarkan data internal JSON yang dimiliki oleh aplikasi",
+          "Sekarang, bagaimanakah bila kita ingin mengkonsumsi data yang disediakan oleh penyedia data yang ada di internet?",
+          "Ingat yah, kata kuncinya adalah PENYEDIA, artinya harus ada yang menyediakan data tersebut. (Bukan sembarang ambil / mencuri data, itu tekniknya berbeda lagi)",
+          "Untuk itu, mari kita coba belajar tentang API terlebih dahulu yah"
+        ]
+      },
+      {
+        "title": "API",
+        "content": [
+          "Apa itu API?",
+          "-API, kependekan dari Application Programming Interface, adalah suatu penengah dari perangkat lunak software intermediary yang memperbolehkan beberapa aplikasi untuk berinteraksi satu sama lain.",
+          "-API itu ada banyak sekali bentuk (dan protokol) yang digunakan. Namun yang akan kita fokuskan di sini adalah REST API"
+        ]
+      },
+      {
+        "title": "API - Analogi",
+        "content": [""],
+        "image": "/assets/image/react-list-api/react-1.png"
+      },
+      {
+        "title": "REST API - Apa Itu ?",
+        "content": [
+          "REST API adalah suatu tipe API yang berkomunikasi via HTTP request untuk melakukan suatu fungsi dasar basis data / database seperti CREATE, READ, UPDATE, DELETE data (sering disebut juga sebagai CRUD)",
+          "HTTP Method yang digunakan untuk request adalah umumnya sebagai berikut:",
+          "-GET, ekuivalen dengan READ",
+          "-POST, ekuivalen dengan CREATE",
+          "-PUT, ekuivalen dengan UPDATE",
+          "-DELETE, ekuivalen dengan DELETE",
+          "dll.."
+        ]
+      },
+      {
+        "title": "REST API - Apa Itu ? (ii)",
+        "content": [
+          "Mari kita coba lihat gambar berikut yang menyatakan REST API"
+        ],
+        "image": "/assets/image/react-list-api/react-2.png"
+      },
+      {
+        "title": "Postman",
+        "content": [
+          "Dikutik dari web Postman, ini adalah sebuah Platform API untuk membangun dan menggunakan API.",
+          "Dengan menggunakan Postman ini, kita bisa me-nembak API yang ingin kita coba gunakan dengan HTTP Method tertentu dan dengan data (request) tertentu, untuk mendapatkan data kembalian (response) sesuai dengan ketentuan output dari API penyedia data.",
+          "Postman ini dapat digunakan dengan cara install (berupa program) ataupun dengan menggunakan web Postman langsung (dengan limitasi).",
+          "Namun untuk menggunakannya caranya sama: HARUS memiliki akun Postman.",
+          "Nah setelah membuat akun, mari kita coba untuk mengkonsumsi API pertama kita yah !"
+        ]
+      },
+      {
+        "title": "Konsumsi API dengan Postman",
+        "content": [
+          "API itu bentuknya umumnya ada 3:",
+          "-Bebas (Public) terbuka (bisa langsung digunakan tanpa perlu embel embel apapun)",
+          "-Bebas (Public) terproteksi (harus menggunakan tanda pengenal berupa kunci / token)",
+          "-Internal (Private), hanya untuk konsumsi internal suatu perusahaan saja",
+          "Pada pembelajaran ini kita akan menggunakan API yang Bebas Terproteksi untuk mengambil data film, yaitu dari TheMovieDataBase (TMDB)",
+          "Bikin akun baru pada TMDB",
+          "Buka pada bagian Settings, lalu API, untuk mendapatkan API Key (v3 Auth). Anggap ini sebagai password untuk bisa mengakses API"
+        ]
+      },
+      {
+        "title": "Konsumsi API dengan Postman - Dokumentasi",
+        "content": ["Click link yang dibawah yah"],
+        "url": "https://developer.themoviedb.org/docs/getting-started"
+      },
+      {
+        "title": "Konsumsi API dengan Postman (ii)",
+        "content": [
+          "Setelah kita mendapatkan key, maka kita bisa mencoba untuk me-nembak API TMDB yang kira kira bentuknya seperti ini (Ganti <<api_key>> dengan key yang kita dapatkan):)",
+          "https://api.themoviedb.org/3/movie/76341?api_key=<<api_key>>",
+          "Untuk me-nembak Endpoint API TMDB ini kita akan menggunakan Postman (sesuai gambar di bawah), dan tekan tombol Send untuk melihat hasil kembalian dari API TMDB"
+        ],
+        "image": "/assets/image/react-list-api/react-3.png"
+      },
+      {
+        "title": "Konsumsi API dengan Postman (iii)",
+        "content": [
+          "Untuk Endpoint yang akan digunakan untuk pembelajaran ini adalah GET /movie/popular",
+          "Mari kita coba untuk mengkonsumsi Endpoint API TMDB ini dengan menggunakan Postman",
+          "Nah setelah berhasil kita coba untuk mengambil data ini, tentunya sekarang kita akan memiliki pertanyaan donk:",
+          "-Bagaimanakah cara kita menggunakan data ini ke dalam aplikasi React yang kita buat?",
+          "Untuk menjawab itu, mari kita belajar tentang axios terlebih dahulu yah !"
+        ]
+      },
+      {
+        "title": "Axios",
+        "content": [
+          "Nah dari tadi kita mencoba untuk melakukan Komunikasi dengan server penyedia API via HTTP Protocol bukan?",
+          "Axios adalah Library Javascript yang bisa kita gunakan untuk melakukan komunikasi dengan server penyedia API. (HTTP Request) dan sudah berbasis Promise"
+        ]
+      },
+      {
+        "title": "Axios - How To ?",
+        "content": ["Cara menggunakan axios"],
+        "image": "/assets/image/react-list-api/react-4.png"
+      },
+      {
+        "title": "Axios - How To ? (ii)",
+        "content": ["Axios Method Aliases"],
+        "image": "/assets/image/react-list-api/react-5.png"
+      },
+      {
+        "title": "Axios - How To ? (iii)",
+        "content": [
+          "Axios Response Schema (Hasil kembalian / response yang dibuat oleh axios)"
+        ],
+        "image": "/assets/image/react-list-api/react-6.png"
+      },
+      {
+        "title": "Axios - Demo",
+        "content": [
+          "Mari kita coba untuk mengubah kode sebelumnya menjadi data asli dari TMDB dengan menggunakan Axios",
+          "Adapun langkah pengerjaannya adalah sebagai berikut:",
+          "-Install axios dengan npm install axios",
+          "-Buat container baru dengan nama ListMoviesReal.jsx",
+          "-Masukkan Kode untuk membuat ListMoviesReal.jsx dengan axios dan useEffect",
+          "-Modifikasi App.js untuk menerima Container ListMoviesReal.jsx",
+          "-PS: Kita tidak perlu memodifikasi CardMovie lagi walaupun kita pakai di 2 tempat yang berbeda !",
+          "-PS2: Terima kasih sistem Component !"
+        ],
+        "url": "https://github.com/ridhorayputraa/react-list-axios/tree/using-axios-fetch-data"
+      },
+      {
+        "title": "Axios - Demo (ii)",
+        "content": [
+          "Sampai di sini kita sudah berhasil menarik data dari API TMDB",
+          "Tapi... di sini kita berasa ada yang janggal bukan?",
+          "Apa yang terjadi, seandainya kita punya banyak tarikan data dari TMDB?",
+          "Pastinya akan ada banyak sekali perulangan terhadap string URL yang dibuat bukan?",
+          "Bagaimana cara kita mengakalinya?",
+          "Salah satunya adalah dengan menggunkana axios Instance"
+        ]
+      },
+      {
+        "title": "Axios - Instance",
+        "content": [
+          "Cara untuk membuat suatu instance axios dengan konfigurasi tertentu agar kode tidak berulang",
+          "Contoh penulisan kode dengan axios instance:"
+        ],
+        "image": "/assets/image/react-list-api/react-7.png"
+      },
+      {
+        "title": "Axios - Instance (Demo)",
+        "content": [
+          "Mari kita coba untuk mengubah kode kita dengan menggunakan axios instance:",
+          "-Buat sebuah file /src/apis/tmdb.js",
+          "-Masukkan kode axios instance pada tmdb.js",
+          "-Ubah file /src/containers/ListMovieReal.jsx untuk melakukan import dari /src/apis/tmdb.js, bukan dari axios langsung lagi"
+        ],
+        "url": "https://github.com/ridhorayputraa/react-list-axios/tree/axios-instance"
+      },
+      {
+        "title": "Conclusion",
+        "content": [
+          "Nah sampai di titik ini artinya kita sudah berhasil menggunakan Axios untuk bisa me-nembak data dari REST API pihak ketiga bernama TMDB.",
+          "Selamat belajar !"
+        ]
+      },
+      {
+        "title": "FINISH",
+        "content": ["QnA"]
+      },
+      {
+        "title": "Tugas",
+        "content": ["Buat landing page kalian sendiri ya dengan minimal 3 page"]
       }
     ],
     "schedule": [
